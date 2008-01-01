@@ -1,4 +1,8 @@
 :root {
-    --bg-color: #9f4c97;
-    --bg-color-dark: #482649;
+    --bg-color: #e3464f;
+    --bg-color-medio: #c9414e;
+    --bg-color-dark: #540f23;
+    --bg-color-second: #393a72;
+    --bg-color-second-medio: #5355a7;
+    --bg-color-second-dark: #7476ba;
 }
