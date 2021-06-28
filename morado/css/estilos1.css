@@ -32,10 +32,15 @@
 .card1{
 	padding: 0px;
 	border-radius: 45px;
-	border: solid rgba(0, 117, 168, 1);
-	min-height: 600px;
+	background: white;
+	min-height: 200px;
 }
-
+.borde_claro{
+	border: solid var(--bg-color)!important;
+}
+.borde_oscuro{
+	border: solid var(--bg-color-dark)!important;
+}
 .card_top{
 	margin: 0px;
 	padding-left: 1.5rem;
@@ -198,6 +203,12 @@ p, button{
 	font-size: 15px;
 }
 
+.bg-color{
+	background: var(--bg-color);
+}
+.bg-color-dark{
+	background: var(--bg-color-dark);
+}
 
 /*.header_abc{
 	background: #98bec4;

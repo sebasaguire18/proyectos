@@ -206,178 +206,178 @@ function cambiacontenido2(opcion){
     }
 }
 
-function conjuntos(num){
-    $(".info_conjuntos").removeClass('fondo_azul_claro');
-    $(".info_conjuntos"+num).addClass('fondo_azul_claro');
-    $(".info_conjuntos").removeClass('shadow');
-    $(".info_conjuntos"+num).addClass('shadow');
-    if (num == 1) {
-        var conjunto = `
-                    <div class="col-lg-12 col-md-12">
-                      <b>Definiciones básicas</b>
-                      <div class="mt-2">
-                        <p class="justificado">Un conjunto es una colección o reunión de objetos o cosas.  Se llaman “elementos” a aquellos objetos o cosas que constituyen el conjunto, o que lo conforman</p>
-                      </div>
-                    </div>
+// function conjuntos(num){
+//     $(".info_conjuntos").removeClass('fondo_azul_claro');
+//     $(".info_conjuntos"+num).addClass('fondo_azul_claro');
+//     $(".info_conjuntos").removeClass('shadow');
+//     $(".info_conjuntos"+num).addClass('shadow');
+//     if (num == 1) {
+//         var conjunto = `
+//                     <div class="col-lg-12 col-md-12">
+//                       <b>Definiciones básicas</b>
+//                       <div class="mt-2">
+//                         <p class="justificado">Un conjunto es una colección o reunión de objetos o cosas.  Se llaman “elementos” a aquellos objetos o cosas que constituyen el conjunto, o que lo conforman</p>
+//                       </div>
+//                     </div>
                     
-                    <div><img src="assets/img/img_template/ejemplos.png" alt="" class="img-icon"> <b>Por ejemplo: </b></div>
+//                     <div><img src="assets/img/img_template/ejemplos.png" alt="" class="img-icon"> <b>Por ejemplo: </b></div>
 
-                    <div class="m-0 row">
-                      <div class="col-lg-4">
-                        <div class="mt-5">
-                          <center><h5>Son conjuntos los siguientes</h5></center>
-                        </div>
-                        <div>
-                          <center><img src="assets/img/img_ova/flecha_punteada.png"></center>
-                        </div>
-                      </div>
-                      <div class="col-lg-4">
-                        <p class="justificado size_13">
-                          <b>a</b>. Las letras del alfabeto castellano. <br>
-                          <b>b</b>. Los estudiantes de Ingenierías y de Economía de UNAULA.<br>
-                          <b>c</b>. Los números pares.<br>
-                          <b>d</b>. El conjunto de todos los habitantes de Colombia.<br>
-                          <b>e</b>. Los ciudadanos de Colombia que han sido presidentes.<br>
-                          <b>f</b>. Los estudiantes de Ingeniería Informática de Colombia que han leído la Constitución.<br>
-                          <b>g</b>. Los números Enteros.
-                        </p>
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/img_ova/geometricos.png" style="max-width: 70%;">
-                      </div>
-                    </div>
-                    `;
-        $("#info_unidad2").html(conjunto)
-    }if (num == 2) {
-        var conjunto = `
-                    <div class="col-lg-12 row">
-                      <div class="col-md-4 row" style="border-right: solid 1px #4141f3;">
-                          <div class="col-lg-4">
-                            <img src="assets/img/img_ova/mayuscula.png" style="max-width: 100%;">
-                          </div>
-                          <div class="col-lg-8">
-                            <p class="size_13">Se acostumbra a utilizar las letras <b>mayúsculas</b> para denotar conjuntos.</p>
-                          </div>
-                          <div class="col-lg-4">
-                            <img src="assets/img/img_ova/minuscula.png" style="max-width: 100%;">
-                          </div>
-                          <div class="col-lg-8">
-                            <p class="size_13">Y las letras <b>minúsculas</b> para denotar sus elementos</p>
-                          </div>
-                      </div>
-                      <div class="col-md-4" style="border-right: solid 1px #4141f3; padding-left: 20px;">
-                          <div class="mb-2">
-                            <p>Se tiene que para indicar que el elemento 𝒙 pertenece al conjunto B escribiremos  <b>𝒙∈𝑩;</b> Que se lee:</p>
-                          </div>
-                          <div class="content-banner">
-                            <div class="banner">
-                                <p class="text-white text-banner">“x pertenece a B”, “x es un elemento de B”.</p>
-                            </div>
-                          </div>
-                      </div>
-                      <div class="col-md-4" style="padding-left: 20px;">
-                          <div class="mb-2">
-                            <p>Si el elemento 𝒂 no pertenece al conjunto <b>𝑩</b> escribiremos</p>
-                          </div>
-                          <div class="content-banner">
-                              <div class="banner">
-                                <p class="text-white text-banner">𝒙∉𝑩</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-md-12" style="padding: 5%;">
+//                     <div class="m-0 row">
+//                       <div class="col-lg-4">
+//                         <div class="mt-5">
+//                           <center><h5>Son conjuntos los siguientes</h5></center>
+//                         </div>
+//                         <div>
+//                           <center><img src="assets/img/img_ova/flecha_punteada.png"></center>
+//                         </div>
+//                       </div>
+//                       <div class="col-lg-4">
+//                         <p class="justificado size_13">
+//                           <b>a</b>. Las letras del alfabeto castellano. <br>
+//                           <b>b</b>. Los estudiantes de Ingenierías y de Economía de UNAULA.<br>
+//                           <b>c</b>. Los números pares.<br>
+//                           <b>d</b>. El conjunto de todos los habitantes de Colombia.<br>
+//                           <b>e</b>. Los ciudadanos de Colombia que han sido presidentes.<br>
+//                           <b>f</b>. Los estudiantes de Ingeniería Informática de Colombia que han leído la Constitución.<br>
+//                           <b>g</b>. Los números Enteros.
+//                         </p>
+//                       </div>
+//                       <div class="col-lg-4">
+//                         <img src="assets/img/img_ova/geometricos.png" style="max-width: 70%;">
+//                       </div>
+//                     </div>
+//                     `;
+//         $("#info_unidad2").html(conjunto)
+//     }if (num == 2) {
+//         var conjunto = `
+//                     <div class="col-lg-12 row">
+//                       <div class="col-md-4 row" style="border-right: solid 1px #4141f3;">
+//                           <div class="col-lg-4">
+//                             <img src="assets/img/img_ova/mayuscula.png" style="max-width: 100%;">
+//                           </div>
+//                           <div class="col-lg-8">
+//                             <p class="size_13">Se acostumbra a utilizar las letras <b>mayúsculas</b> para denotar conjuntos.</p>
+//                           </div>
+//                           <div class="col-lg-4">
+//                             <img src="assets/img/img_ova/minuscula.png" style="max-width: 100%;">
+//                           </div>
+//                           <div class="col-lg-8">
+//                             <p class="size_13">Y las letras <b>minúsculas</b> para denotar sus elementos</p>
+//                           </div>
+//                       </div>
+//                       <div class="col-md-4" style="border-right: solid 1px #4141f3; padding-left: 20px;">
+//                           <div class="mb-2">
+//                             <p>Se tiene que para indicar que el elemento 𝒙 pertenece al conjunto B escribiremos  <b>𝒙∈𝑩;</b> Que se lee:</p>
+//                           </div>
+//                           <div class="content-banner">
+//                             <div class="banner">
+//                                 <p class="text-white text-banner">“x pertenece a B”, “x es un elemento de B”.</p>
+//                             </div>
+//                           </div>
+//                       </div>
+//                       <div class="col-md-4" style="padding-left: 20px;">
+//                           <div class="mb-2">
+//                             <p>Si el elemento 𝒂 no pertenece al conjunto <b>𝑩</b> escribiremos</p>
+//                           </div>
+//                           <div class="content-banner">
+//                               <div class="banner">
+//                                 <p class="text-white text-banner">𝒙∉𝑩</p>
+//                               </div>
+//                           </div>
+//                       </div>
+//                       <div class="col-md-12" style="padding: 5%;">
                         
-                      </div>
-                    </div>
-                    `;
-        $("#info_unidad2").html(conjunto)
-    }if (num == 3) {
-        var conjunto = `
-                    <div class="col-lg-12 col-md-12 mt-3">
-                      <h5>Determinación de conjuntos:</h5>
-                      <p>Un conjunto se puede describir o determinar, por:</p>
-                    </div>
-                    <div class="col-lg-12 col-md-12 row">
-                      <center class="col-lg-6">
-                        <div>
-                          <div class="card1-2">
-                              <div class="card_top2">
-                                  <div class="m-0 p-0">
-                                      <p class="text-white text-center azul_card p-2 rounded">a. Extensión</p>
-                                  </div>
-                                  <br>
-                                  <p>Se escriben todos sus elementos separados por comas, y encerrándolos dentro de llaves  { . . . . }</p>
-                              </div>
-                              <div class="card1_bottom2">
-                                  <div class="row">
-                                      <div class="col-lg-12">
-                                        <p class="text-white"><img src="assets/img/img_template/ejemplos.png" alt="" class="img-icon"> <b>Por ejemplo: </b></p>
-                                        <p class="text-white">
-                                        Al conjunto A formado por las vocales, puedes representarlo por:  𝐴 = { 𝑎, 𝑒, 𝑖, 𝑜, 𝑢 }</p>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                        </div>
-                      </center>
-                      <div class="col-lg-6">
-                        <div class="card1-2">
-                            <div class="card_top2">
-                                <div class="m-0 p-0">
-                                    <p class="text-white text-center azul_card p-2 rounded">b. Comprensión</p>
-                                </div>
-                                <br>
-                                <p>Se escriben todos sus elementos separados por comas, y encerrándolos dentro de llaves  { . . . . }</p>
-                            </div>
-                            <div class="card1_bottom2">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                      <p class="text-white"><img src="assets/img/img_template/ejemplos.png" alt="" class="img-icon"> <b>Por ejemplo: </b></p>
-                                      <p class="text-white">Si 𝑀 es el conjunto de los números impares: 𝑀 = { 𝒙 / 𝒙 𝑒𝑠 𝑛ú𝑚𝑒𝑟𝑜 𝑖𝑚𝑝𝑎𝑟 }
-                              Que se lee “𝑀 es el conjunto de elementos 𝒙,  tal que 𝒙 es número impar”.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                      </div>
-                    </div>
-                    `;
-        $("#info_unidad2").html(conjunto)
-    }if (num == 4) {
-        var conjunto = `
-                    <div class="col-lg-12 row m-2">
-                      <h5>Representación de conjuntos:</h5>
-                      <p class="justificado">Los conjuntos pueden representarse en DIAGRAMA DE VENN
-                      Todo conjunto se puede representar gráficamente por medio de un área plana delimitada por una curva cerrada (óvalos, círculo, triángulo, rectángulo, etc.)</p>
-                    </div>
-                    <div class="row m-1">
-                      <div class="col-lg-2">
-                        <img src="assets/img/img_ova/ejemplos.png" style="max-width: 100%;">
-                      </div>
-                      <div class="col-lg-5">
-                        <b>Ejemplo</b>
-                        <p>Los conjuntos 𝐴 = {1, 2, 3 }  y 𝐵={ 2, 4 }  gráficamente:</p>
-                        <img src="assets/img/img_ova/flecha_punteada.png">
-                      </div>
-                      <div class="col-lg-5">
-                        <img src="assets/img/img_ova/representacion_conjuntos.png" style="max-width: 70%;">
-                      </div>
-                    </div>
-                    `;
-        $("#info_unidad2").html(conjunto)
-    }if (num == 5) {
-        var conjunto = `
-                    <div class="d-flex justify-content-center col-md-12">
-                      <div class="row">
-                        <div class="fondo_canvas col-lg-12 m-0 p-0">
-                          <p class="rueda1 cursor" data-toggle="modal" data-target="#modalconjunto">Conjunto universal (referencial)</p>
-                          <p class="rueda2 cursor" data-toggle="modal" data-target="#modalconjunto2">Conjuntos finitos e infinitos</p>
-                          <p class="rueda3 cursor" data-toggle="modal" data-target="#modalconjunto3">Subconjuntos</p>
-                          <p class="rueda4 cursor" data-toggle="modal" data-target="#modalconjunto4">Conjunto vacío</p>
-                        </div>
-                      </div>
-                    </div>
-                    `;
-        $("#info_unidad2").html(conjunto)
-    }
-}
+//                       </div>
+//                     </div>
+//                     `;
+//         $("#info_unidad2").html(conjunto)
+//     }if (num == 3) {
+//         var conjunto = `
+//                     <div class="col-lg-12 col-md-12 mt-3">
+//                       <h5>Determinación de conjuntos:</h5>
+//                       <p>Un conjunto se puede describir o determinar, por:</p>
+//                     </div>
+//                     <div class="col-lg-12 col-md-12 row">
+//                       <center class="col-lg-6">
+//                         <div>
+//                           <div class="card1-2">
+//                               <div class="card_top2">
+//                                   <div class="m-0 p-0">
+//                                       <p class="text-white text-center azul_card p-2 rounded">a. Extensión</p>
+//                                   </div>
+//                                   <br>
+//                                   <p>Se escriben todos sus elementos separados por comas, y encerrándolos dentro de llaves  { . . . . }</p>
+//                               </div>
+//                               <div class="card1_bottom2">
+//                                   <div class="row">
+//                                       <div class="col-lg-12">
+//                                         <p class="text-white"><img src="assets/img/img_template/ejemplos.png" alt="" class="img-icon"> <b>Por ejemplo: </b></p>
+//                                         <p class="text-white">
+//                                         Al conjunto A formado por las vocales, puedes representarlo por:  𝐴 = { 𝑎, 𝑒, 𝑖, 𝑜, 𝑢 }</p>
+//                                       </div>
+//                                   </div>
+//                               </div>
+//                           </div>
+//                         </div>
+//                       </center>
+//                       <div class="col-lg-6">
+//                         <div class="card1-2">
+//                             <div class="card_top2">
+//                                 <div class="m-0 p-0">
+//                                     <p class="text-white text-center azul_card p-2 rounded">b. Comprensión</p>
+//                                 </div>
+//                                 <br>
+//                                 <p>Se escriben todos sus elementos separados por comas, y encerrándolos dentro de llaves  { . . . . }</p>
+//                             </div>
+//                             <div class="card1_bottom2">
+//                                 <div class="row">
+//                                     <div class="col-lg-12">
+//                                       <p class="text-white"><img src="assets/img/img_template/ejemplos.png" alt="" class="img-icon"> <b>Por ejemplo: </b></p>
+//                                       <p class="text-white">Si 𝑀 es el conjunto de los números impares: 𝑀 = { 𝒙 / 𝒙 𝑒𝑠 𝑛ú𝑚𝑒𝑟𝑜 𝑖𝑚𝑝𝑎𝑟 }
+//                               Que se lee “𝑀 es el conjunto de elementos 𝒙,  tal que 𝒙 es número impar”.</p>
+//                                     </div>
+//                                 </div>
+//                             </div>
+//                         </div>
+//                       </div>
+//                     </div>
+//                     `;
+//         $("#info_unidad2").html(conjunto)
+//     }if (num == 4) {
+//         var conjunto = `
+//                     <div class="col-lg-12 row m-2">
+//                       <h5>Representación de conjuntos:</h5>
+//                       <p class="justificado">Los conjuntos pueden representarse en DIAGRAMA DE VENN
+//                       Todo conjunto se puede representar gráficamente por medio de un área plana delimitada por una curva cerrada (óvalos, círculo, triángulo, rectángulo, etc.)</p>
+//                     </div>
+//                     <div class="row m-1">
+//                       <div class="col-lg-2">
+//                         <img src="assets/img/img_ova/ejemplos.png" style="max-width: 100%;">
+//                       </div>
+//                       <div class="col-lg-5">
+//                         <b>Ejemplo</b>
+//                         <p>Los conjuntos 𝐴 = {1, 2, 3 }  y 𝐵={ 2, 4 }  gráficamente:</p>
+//                         <img src="assets/img/img_ova/flecha_punteada.png">
+//                       </div>
+//                       <div class="col-lg-5">
+//                         <img src="assets/img/img_ova/representacion_conjuntos.png" style="max-width: 70%;">
+//                       </div>
+//                     </div>
+//                     `;
+//         $("#info_unidad2").html(conjunto)
+//     }if (num == 5) {
+//         var conjunto = `
+//                     <div class="d-flex justify-content-center col-md-12">
+//                       <div class="row">
+//                         <div class="fondo_canvas col-lg-12 m-0 p-0">
+//                           <p class="rueda1 cursor" data-toggle="modal" data-target="#modalconjunto">Conjunto universal (referencial)</p>
+//                           <p class="rueda2 cursor" data-toggle="modal" data-target="#modalconjunto2">Conjuntos finitos e infinitos</p>
+//                           <p class="rueda3 cursor" data-toggle="modal" data-target="#modalconjunto3">Subconjuntos</p>
+//                           <p class="rueda4 cursor" data-toggle="modal" data-target="#modalconjunto4">Conjunto vacío</p>
+//                         </div>
+//                       </div>
+//                     </div>
+//                     `;
+//         $("#info_unidad2").html(conjunto)
+//     }
+// }

@@ -29,7 +29,7 @@ $( document ).ready(function() {
         slide();
         actualizarprogress();
     });
-    /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
+    /*setMigaja("Unidades de aprendizaje","1. La pesquisa bibliográfica","Exploración de la literatura como sustento.");*/
 
     var knob = "";
     var bar = "";
@@ -76,7 +76,7 @@ function slide_link(num){
 function controlSlides(num){
     switch (parseInt(num)) {
         case 1:
-            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");
+            setMigaja("Unidades de aprendizaje","1. La pesquisa bibliográfica","Exploración de la literatura como sustento.");
             dragging = "";
             diff = "";
             newTop = "";
@@ -87,17 +87,17 @@ function controlSlides(num){
             scroll();
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");            
+            setMigaja("Unidades de aprendizaje","1. La pesquisa bibliográfica","Exploración de la literatura como sustento.");            
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");
+            setMigaja("Unidades de aprendizaje","1. La pesquisa bibliográfica","Exploración de la literatura como sustento.");
             
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");
+            setMigaja("Unidades de aprendizaje","1. La pesquisa bibliográfica","Exploración de la literatura como sustento.");
             break;
         case 5:
-            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
+            setMigaja("Unidades de aprendizaje","1. La pesquisa bibliográfica","Método de demostración por Inducción matemática");
             dragging = "";
             diff = "";
             newTop = "";
@@ -108,22 +108,22 @@ function controlSlides(num){
             scroll();
             break;
         case 6:
-            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
+            setMigaja("Unidades de aprendizaje","1. La pesquisa bibliográfica","Método de demostración por Inducción matemática");
             break;
         case 7:
-            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
+            setMigaja("Unidades de aprendizaje","1. La pesquisa bibliográfica","Método de demostración por Inducción matemática");
             break;
         case 8:
-            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
+            setMigaja("Unidades de aprendizaje","1. La pesquisa bibliográfica","Método de demostración por Inducción matemática");
             break;
         case 9:
-            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
+            setMigaja("Unidades de aprendizaje","1. La pesquisa bibliográfica","Método de demostración por Inducción matemática");
             break;
         case 10:
-            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
+            setMigaja("Unidades de aprendizaje","1. La pesquisa bibliográfica","Método de demostración por Inducción matemática");
             break;
         case 11:
-            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
+            setMigaja("Unidades de aprendizaje","1. La pesquisa bibliográfica","Método de demostración por Inducción matemática");
             $("#content-ova").load("base/unidades/unidad2.html");
             tema = 1;
             break;
@@ -379,5 +379,48 @@ function quitar(num) {
     if (num == 3) {
         $(".custom-scrollbar__bar2").css('display','none');
         $(".custom-scrollbar2").css('height','180px');
+    }
+}
+function conjuntos(num){
+    $(".card1").removeClass('borde_claro');
+    $(".info_conjuntos").removeClass('bg-color-dark');
+    $(".info_conjuntos"+num).addClass('bg-color-dark');
+    $(".info_conjuntos").removeClass('shadow');
+    $(".info_conjuntos"+num).addClass('shadow');
+    if (num == 1) {
+        var conjunto = `
+                    <div class="col-lg-12 col-md-12 card1 borde_oscuro py-5">
+                      <center><p class="text-black py-3">Teorías</p></center>
+                    </div>
+                    `;
+        $("#info_unidad2").html(conjunto)
+    }if (num == 2) {
+        var conjunto = `
+                    <div class="col-lg-12 col-md-12 card1 borde_oscuro py-5">
+                      <center><p class="text-black py-3">Conceptualizaciones</p></center>
+                    </div>
+                    `;
+        $("#info_unidad2").html(conjunto)
+    }if (num == 3) {
+        var conjunto = `
+                    <div class="col-lg-12 col-md-12 card1 borde_oscuro py-5">
+                      <center><p class="text-black py-3">Perspectivas</p></center>
+                    </div>
+                    `;
+        $("#info_unidad2").html(conjunto)
+    }if (num == 4) {
+        var conjunto = `
+                    <div class="col-lg-12 col-md-12 card1 borde_oscuro py-5">
+                      <center><p class="text-black py-3">Investigaciones</p></center>
+                    </div>
+                    `;
+        $("#info_unidad2").html(conjunto)
+    }if (num == 5) {
+        var conjunto = `
+                    <div class="col-lg-12 col-md-12 card1 borde_oscuro py-5">
+                      <center><p class="text-black py-3">Antecedentes en general</p></center>
+                    </div>
+                    `;
+        $("#info_unidad2").html(conjunto)
     }
 }
