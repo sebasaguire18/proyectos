@@ -28,12 +28,28 @@
 .azul_uno{
 	background: #B7CBD9;
 }
-
+.menos-margin-50{
+	margin-top: -50px;
+}
+.p-small{
+	font-size: 19px!important;
+}
+.p-medium{
+	font-size: 26px!important;
+}
+.p-big{
+	font-size: 32px!important;
+}
+.bottom-0{
+	position: absolute;
+	bottom: 0;
+	left: 15px;
+}
 .card1{
 	padding: 0px;
 	border-radius: 45px;
 	background: white;
-	min-height: 200px;
+	min-height: 150px;
 }
 .borde_claro{
 	border: solid var(--bg-color)!important;
@@ -209,7 +225,26 @@ p, button{
 .bg-color-dark{
 	background: var(--bg-color-dark);
 }
-
+.bg-color-1{
+	background: #c769fa;
+}
+.bg-color-2{
+	background: #896bf3;
+}
+.bg-color-3{
+	background: #677df5;
+}
+.bg-color-4{
+	background: #65b0f1;
+}
+.hidden{
+	visibility: hidden;
+	opacity: 0;
+}
+.visibility{
+	visibility: visible!important;
+	opacity:	1!important;
+}
 /*.header_abc{
 	background: #98bec4;
 	width: 40px;

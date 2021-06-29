@@ -389,38 +389,171 @@ function conjuntos(num){
     $(".info_conjuntos"+num).addClass('shadow');
     if (num == 1) {
         var conjunto = `
-                    <div class="col-lg-12 col-md-12 card1 borde_oscuro py-5">
+                    <div class="col-lg-12 col-md-12 card1 borde_oscuro py-5 menos-margin-50">
                       <center><p class="text-black py-3">Teorías</p></center>
                     </div>
                     `;
         $("#info_unidad2").html(conjunto)
     }if (num == 2) {
         var conjunto = `
-                    <div class="col-lg-12 col-md-12 card1 borde_oscuro py-5">
+                    <div class="col-lg-12 col-md-12 card1 borde_oscuro py-5 menos-margin-50">
                       <center><p class="text-black py-3">Conceptualizaciones</p></center>
                     </div>
                     `;
         $("#info_unidad2").html(conjunto)
     }if (num == 3) {
         var conjunto = `
-                    <div class="col-lg-12 col-md-12 card1 borde_oscuro py-5">
+                    <div class="col-lg-12 col-md-12 card1 borde_oscuro py-5 menos-margin-50">
                       <center><p class="text-black py-3">Perspectivas</p></center>
                     </div>
                     `;
         $("#info_unidad2").html(conjunto)
     }if (num == 4) {
         var conjunto = `
-                    <div class="col-lg-12 col-md-12 card1 borde_oscuro py-5">
+                    <div class="col-lg-12 col-md-12 card1 borde_oscuro py-5 menos-margin-50">
                       <center><p class="text-black py-3">Investigaciones</p></center>
                     </div>
                     `;
         $("#info_unidad2").html(conjunto)
     }if (num == 5) {
         var conjunto = `
-                    <div class="col-lg-12 col-md-12 card1 borde_oscuro py-5">
+                    <div class="col-lg-12 col-md-12 card1 borde_oscuro py-5 menos-margin-50">
                       <center><p class="text-black py-3">Antecedentes en general</p></center>
                     </div>
                     `;
         $("#info_unidad2").html(conjunto)
+    }
+}
+function textAreaCard(num){
+    $(".text-area-card-hijo").removeClass('bg-color');
+    $(".text-area-card-hijo").removeClass('bg-color-1');
+    $(".text-area-card-hijo").removeClass('bg-color-2');
+    $(".text-area-card-hijo").removeClass('bg-color-3');
+    $(".text-area-card-hijo").removeClass('bg-color-4');
+
+    if (num == 1) {
+        $(".text-area-card-hijo").addClass('bg-color')
+        var conjunto = `
+                        <div class="row px-5" id="contenido-hijo">
+                            <div class="col-12 m-5 text-white">
+                                <p>Previene errores o falencias que otros estudios pudiesen haber presentado.</p>
+                            </div>
+                        </div>
+                    `;
+        $("#contenido-card").html(conjunto)
+    }if (num == 2) {
+        $(".text-area-card-hijo").addClass('bg-color-1')
+        var conjunto = `
+                        <div class="row px-5" id="contenido-hijo">
+                            <div class="col-12 ml-3 mt-5 text-white">
+                                <p>Instruye sobre cómo ha de desarrollarse el nuevo estudio, 
+                                pues a través de este nos podemos dar cuenta de cómo se ha tratado 
+                                un problema de investigación específico, por ejemplo: ¿qué clases de 
+                                estudios se han realizado, los tipos de participantes, la recolección de datos,
+                                los sitios de realización y los diseños utilizados, etc.</p>
+                            </div>
+                        </div>
+                    `;
+        $("#contenido-card").html(conjunto)
+    }if (num == 3) {
+        $(".text-area-card-hijo").addClass('bg-color-2')
+        var conjunto = `
+                        <div class="row px-5" id="contenido-hijo">
+                            <div class="col-12 mt-5 text-white">
+                                <p>Guía al investigador centrándolo en su problema de investigación.</p>
+                            </div>
+                        </div>
+                    `;
+        $("#contenido-card").html(conjunto)
+    }if (num == 4) {
+        $(".text-area-card-hijo").addClass('bg-color-3')
+        var conjunto = `
+                        <div class="row px-5" id="contenido-hijo">
+                            <div class="col-12 ml-3 mt-5 text-white">
+                                <p>Legitima la importancia y la necesidad de realizar dicha investigación, 
+                                ya que a través de la bibliografía consultada esta le dará razones para el 
+                                avance o cambio del tema de investigación.</p>
+                            </div>
+                        </div>
+                    `;
+        $("#contenido-card").html(conjunto)
+    }if (num == 5) {
+        $(".text-area-card-hijo").addClass('bg-color-4')
+        var conjunto = `
+                    <div class="row px-5" id="contenido-hijo">
+                        <div class="col-12 ml-3 mt-5 text-white">
+                            <p>Conlleva a la construcción de hipótesis o afirmaciones de lo que se cree 
+                            se va a probar con la realización de dicha investigación y que serán comprobadas 
+                            o no después de esta.</p>
+                        </div>
+                    </div>
+                `;
+        $("#contenido-card").html(conjunto)
+    }if (num == 6) {
+        $(".text-area-card-hijo").addClass('bg-color')
+        var conjunto = `
+                    <div class="row px-5" id="contenido-hijo">
+                        <div class="col-12 ml-3 mt-5 text-white">
+                            <p>Incentiva a la continuación de posteriores investigaciones similares, 
+                            a la vez que puede establecer nuevas teorías o metodologías para su aplicabilidad, 
+                            generando nuevos conocimientos.</p>
+                        </div>
+                    </div>
+                `;
+        $("#contenido-card").html(conjunto)
+    }if (num == 7) {
+        $(".text-area-card-hijo").addClass('bg-color-1')
+        var conjunto = `
+                    <div class="row px-5" id="contenido-hijo">
+                        <div class="col-12 mt-5 text-white">
+                            <p>Proporciona y crea marcos de referencia para la interpretación de resultados.</p>
+                        </div>
+                    </div>
+                `;
+        $("#contenido-card").html(conjunto)
+    }
+}
+function cardImg(num,texto){
+    // $("#img-1").addClass('visibility')
+    // $("#img-2").addClass('visibility')
+    
+    if (texto == 1) {
+        $(".text-2").addClass('hidden')
+        var conjunto = `
+                        <img src="assets/img/img_ova/busqueda-de-conocimiento.png" class="w-50 my-3" id="img-2">
+                        `;
+        $("#card-img-big-2").html(conjunto)
+    }else {
+        $(".text-1").addClass('hidden')
+        var conjunto = `
+                        <img src="assets/img/img_ova/contrato.png" class="w-50 my-3" id="img-1">
+                    `;
+        $("#card-img-big-1").html(conjunto)
+    }
+    if (num == 1) {
+        $("#img-1").addClass('hidden')
+        var conjunto = `
+                        <div class="row justify-content my-2 text-1" onclick="cardImg(1,1)">
+                            <div class="col-12 text-white text-start">
+                                <p class="p-small"> Una revisión exhaustiva de la bibliografía sobre el estado del arte de su situación problema, 
+                                    se debe revisar toda la bibliografía de la manera más completa sin dejar autores o teorías 
+                                    referentes a su tema/problema de investigación, para que usted se ubique dentro del contexto 
+                                    del mismo y se dé cuenta de lo que se ha hecho y de lo que usted podría hacer.
+                                </p>
+                            </div>
+                        </div>
+                    `;
+        $("#card-img-big-1").html(conjunto)
+    }if (num == 2) {
+        $("#img-2").addClass('hidden')
+        var conjunto = `
+                        <div class="row justify-content my-2 text-2" onclick="cardImg(1,2)">
+                            <div class="col-12 text-white text-start">
+                                <p class="p-small">La aplicación de una orientación teórica o de referencia, para que su investigación no pierda rigor científico.
+                                </p>
+                            </div>
+                        </div>
+                    `;
+        $("#card-img-big-2").html(conjunto)
     }
 }
