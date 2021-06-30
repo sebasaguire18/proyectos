@@ -57,6 +57,12 @@
 .borde_oscuro{
 	border: solid var(--bg-color-dark)!important;
 }
+.border-default{
+	border-radius: 20px!important;
+}
+.border_r{
+	border-radius: 45px!important;
+}
 .card_top{
 	margin: 0px;
 	padding-left: 1.5rem;
@@ -79,13 +85,10 @@
 }
 
 .card2{
-	padding: 0px;
-	border-radius: 45px;
-	border: solid rgba(51, 153, 255, 1);
-	min-height: 600px;
+	border-right: solid 1px var(--bg-color);
 }
 
-.card2_bottom{
+/* .card2_bottom{
 	margin: 0px;
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
@@ -94,15 +97,15 @@
 	border-bottom-right-radius: 42px;
 	border-bottom-left-radius: 42px;
 	background-color: rgba(51, 153, 255, 1);
-}
+} */
 .card3{
-	padding: 0px;
 	border-radius: 45px;
-	border: solid rgba(51, 189, 255, 1);
-	min-height: 600px;
+	justify-content: center;
+	text-align: center;
+	color: white;
 }
 
-.card3_bottom{
+/* .card3_bottom{
 	margin: 0px;
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
@@ -110,8 +113,8 @@
 	min-height: 300px;
 	border-bottom-right-radius: 42px;
 	border-bottom-left-radius: 42px;
-	background-color: rgba(51, 189, 255, 1);
-}
+	background-color: #65aff0;
+} */
 
 /*.card_flecha{
 	padding-left: 1.5rem;
@@ -244,6 +247,9 @@ p, button{
 .visibility{
 	visibility: visible!important;
 	opacity:	1!important;
+}
+.bg-celeste{
+	background: #65aff0;
 }
 /*.header_abc{
 	background: #98bec4;

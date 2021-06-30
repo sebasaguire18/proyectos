@@ -557,3 +557,71 @@ function cardImg(num,texto){
         $("#card-img-big-2").html(conjunto)
     }
 }
+function cardMedium(num){
+    if (num == 1) {
+        $("#img-card-medium-1").addClass('hidden')
+        $(".card3-padre-1").removeClass('bg-celeste')
+        $(".card3-padre-1").addClass('bg-white')
+        var conjunto = `
+                        <p class="p-4 p-small" id="text-car-1" style="color:black!important">Yo tengo mi propia idea de cómo guiar mi vida, mientras que otros pueden tener una idea diferente de cómo se debe guiar la vida.</p>
+                        `;
+        $("#card-img-medium-1").html(conjunto)
+
+        $("#text-car-2").addClass('hidden')
+        $(".card3-padre-2").removeClass('bg-white')
+        $(".card3-padre-2").addClass('bg-celeste')
+        var imagen = `
+                    <img src="assets/img/img_ova/idea-1.png" class="w-75 p-1" id="img-card-medium-2">
+                    `;
+        $("#card-img-medium-2").html(imagen)
+    }if (num == 2) {
+        $("#img-card-medium-2").addClass('hidden')
+        $(".card3-padre-2").removeClass('bg-celeste')
+        $(".card3-padre-2").addClass('bg-white')
+        var conjunto = `
+                        <p class="p-4 p-small" id="text-car-2" style="color:black!important">Algunos creen que la vida es bien vivida si se trabaja y se consigue cada vez más dinero, mientras que otros creen que vivirla bien es viajar y trabajar más bien poco.</p>
+                        `;
+        $("#card-img-medium-2").html(conjunto)
+        
+        $(".card3-padre-1").removeClass('bg-white')
+        $(".card3-padre-1").addClass('bg-celeste')
+        $("#text-car-1").addClass('hidden')
+        var imagen = `
+                    <img src="assets/img/img_ova/idea.png" class="w-75 p-1" id="img-card-medium-1">
+                    `;
+        $("#card-img-medium-1").html(imagen)
+    }
+}
+function simbolosShadow(num){
+    if (num == 1) {
+        // $("#img-card-medium-1").addClass('hidden')
+        // $(".card3-padre-1").removeClass('bg-celeste')
+        // $(".card3-padre-1").addClass('bg-white')
+        var conjunto = `
+                        <div class="col-8 card4 text-center bg-white border-default px-5 py-3">
+                            <p>¿El para qué?</p>
+                        </div>
+                        `;
+        $("#info-card-hijo").html(conjunto)
+    }if (num == 2) {
+        // $("#img-card-medium-2").addClass('hidden')
+        // $(".card3-padre-2").removeClass('bg-celeste')
+        // $(".card3-padre-2").addClass('bg-white')
+        var conjunto = `
+                        <div class="col-8 card4 text-center bg-white border-default px-5 py-3">
+                            <p>¿El cómo?</p>
+                        </div>
+                        `;
+        $("#info-card-hijo").html(conjunto)
+    }if (num == 3) {
+        // $("#img-card-medium-2").addClass('hidden')
+        // $(".card3-padre-2").removeClass('bg-celeste')
+        // $(".card3-padre-2").addClass('bg-white')
+        var conjunto = `
+                        <div class="col-8 card4 text-center bg-white border-default px-5 py-3">
+                            <p>¿El cuándo ocurre un fenómeno?</p>
+                        </div>
+                        `;
+        $("#info-card-hijo").html(conjunto)
+    }
+}
