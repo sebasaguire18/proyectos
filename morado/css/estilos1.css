@@ -57,6 +57,9 @@
 .borde_oscuro{
 	border: solid var(--bg-color-dark)!important;
 }
+.boder-bottom-big{
+	border-bottom: solid 5px var(--bg-color)!important;
+}
 .border-default{
 	border-radius: 20px!important;
 }
@@ -166,6 +169,15 @@
 	width: 120%;
   position: absolute;
   left: -10%;
+}
+
+.titulo-ova-5{
+  background-image: url(../assets/img/img_ova/actividad_general.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 400px;
+  height: 100px;
+  padding: 38px 0px 0px 100px;
 }
 
 .contenido_decorado{
