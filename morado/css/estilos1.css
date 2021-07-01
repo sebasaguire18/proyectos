@@ -28,8 +28,26 @@
 .azul_uno{
 	background: #B7CBD9;
 }
+.menos-margin-100{
+	margin-top: -100px;
+}
+.menos-margin-80{
+	margin-top: -80px;
+}
+.menos-margin-60{
+	margin-top: -60px;
+}
 .menos-margin-50{
 	margin-top: -50px;
+}
+.menos-margin-25{
+	margin-top: -25px;
+}
+.menos-margin-r-100{
+	margin-right: -100px;
+}
+.menos-margin-l-100{
+	margin-left: -100px;
 }
 .p-small{
 	font-size: 19px!important;
@@ -251,6 +269,9 @@ p, button{
 }
 .bg-color-4{
 	background: #65b0f1;
+}
+.bg-cf{
+	background: #999999!important;
 }
 .hidden{
 	visibility: hidden;

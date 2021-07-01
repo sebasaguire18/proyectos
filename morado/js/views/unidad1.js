@@ -625,3 +625,156 @@ function simbolosShadow(num){
         $("#info-card-hijo").html(conjunto)
     }
 }
+function cardActividad(num){
+    if (num == 1) {
+        $(".card-actividad").removeClass('col-12')
+        $(".card-actividad").addClass('col-4')
+        var conjunto = `
+                        <h6>Sugerencia de lectura:</h6>
+                        <p>Para una mayor comprensión del tema visto, amplíe la idea de exploración de la literatura con el siguiente texto: <i><b>Lectura y escritura en la investigación. </b></i></p>
+            `;
+        $("#card-actividad-text").html(conjunto)
+    }if (num == 2) {
+        $(".card-actividad-2").removeClass('col-12')
+        $(".card-actividad-2").addClass('col-4')
+        var conjunto = `
+                        <h6>Sugerencia de lectura:</h6>
+                        <p>Para una mayor comprensión del tema visto, amplíe la idea de exploración de la literatura; no es necesario que se limite a un referente bibliográfico en particular, la elección es personal.</p>
+            `;
+        $("#card-actividad-text-2").html(conjunto)
+    }
+}
+function fuentesBiblio(num,ventana){
+    if (ventana==0) {
+        $("#contenido-fuentes2").addClass('hidden')
+        var conjunto = `<div class="row" id="contenido-fuentes1">
+                            <div class="col-4" onclick="fuentesBiblio(1,1)">
+                                <div class="d-flex justify-content-center">
+                                    <div class="imgUnidad6 bg-celeste rounded-circle p-3 text-center w-50">
+                                        <img src="assets/img/img_ova/carpeta.png" class="w-50 p-2">
+                                    </div>
+                                </div>
+                                <div class="textUnidad6 bg-celeste border-default text-center p-3 menos-margin-25">
+                                    <h5>Fuentes primarias</h5>
+                                </div>
+                            </div>
+                            <div class="col-4" onclick="fuentesBiblio(2,1)">
+                                <div class="d-flex justify-content-center">
+                                    <div class="imgUnidad6 bg-celeste rounded-circle p-3 text-center w-50">
+                                        <img src="assets/img/img_ova/archivo.png" class="w-50 p-2">
+                                    </div>
+                                </div>
+                                <div class="textUnidad6 bg-celeste border-default text-center p-3 menos-margin-25">
+                                    <h5>Fuentes secundarias</h5>
+                                </div>
+                            </div>
+                            <div class="col-4" onclick="fuentesBiblio(3,1)">
+                                <div class="d-flex justify-content-center">
+                                    <div class="imgUnidad6 bg-celeste rounded-circle p-3 text-center w-50">
+                                        <img src="assets/img/img_ova/dosier.png" class="w-50 p-2">
+                                    </div>
+                                </div>
+                                <div class="textUnidad6 bg-celeste border-default text-center p-3 menos-margin-25">
+                                    <h5>Fuentes terciarias</h5>
+                                </div>
+                            </div>
+                        </div>`;
+        $("#contenido-fuentes-padre").html(conjunto)
+    }
+    if (ventana==1) {
+        if (num == 1) {
+            $("#contenido-fuentes2").addClass('hidden')
+            var conjunto = `
+                            <div class="row mt-5" id="contenido-fuentes2" style="min-height:300px;">
+                                <div class="col-12">
+                                    <div class="row d-flex justify-content-center">
+                                        <div class="col-12 bg-celeste py-3"></div>
+                                        <div class="col-4 menos-margin-60" onclick="fuentesBiblio(1,0)">
+                                            <div class="d-flex justify-content-center">
+                                                <div class="imgUnidad6 bg-celeste rounded-circle p-3 text-center w-50 menos-margin-l-100">
+                                                    <img src="assets/img/img_ova/carpeta.png" class="w-50 p-2">
+                                                </div>
+                                            </div>
+                                            <div class="textUnidad6 bg-celeste border-default text-center p-3 menos-margin-80 menos-margin-r-100 ml-5">
+                                                <h5>Fuentes primarias</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row d-flex justify-content-center">
+                                        <div class="col-8 bg-white border-default p-5">
+                                            <p>Proporcionan datos de primera mano, son documentos que contienen resultados de estudios. 
+                                                Ejemplos: libros, artículos de revistas científicas y ponencias o trabajos presentados 
+                                                en congresos, simposios y otros eventos similares.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            `;
+            $("#contenido-fuentes-padre").html(conjunto)
+        }if (num == 2) {
+            $("#contenido-fuentes2").addClass('hidden')
+            var conjunto = `
+                            <div class="row mt-5" id="contenido-fuentes2" style="min-height:300px;">
+                                <div class="col-12">
+                                    <div class="row d-flex justify-content-center">
+                                        <div class="col-12 bg-celeste py-3"></div>
+                                        <div class="col-4 menos-margin-60" onclick="fuentesBiblio(1,0)">
+                                            <div class="d-flex justify-content-center">
+                                                <div class="imgUnidad6 bg-celeste rounded-circle p-3 text-center w-50 menos-margin-l-100">
+                                                    <img src="assets/img/img_ova/archivo.png" class="w-50 p-2">
+                                                </div>
+                                            </div>
+                                            <div class="textUnidad6 bg-celeste border-default text-center p-3 menos-margin-80 menos-margin-r-100 ml-5">
+                                                <h5>Fuentes secundarias</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row d-flex justify-content-center">
+                                        <div class="col-8 bg-white border-default p-5">
+                                            <p>Son listas, compilaciones y resúmenes de referencias o fuentes primarias, es decir, reprocesos
+                                             de información de primera mano. Las referencias se presentan alfabéticamente según la clasificación 
+                                             que se utilice para ordenarlas: por autor, por tema, por fecha o por área de conocimiento.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            `;
+            $("#contenido-fuentes-padre").html(conjunto)
+        }if (num == 3) {
+            $("#contenido-fuentes2").addClass('hidden')
+            var conjunto = `
+                            <div class="row mt-5" id="contenido-fuentes2" style="min-height:300px;">
+                                <div class="col-12">
+                                    <div class="row d-flex justify-content-center">
+                                        <div class="col-12 bg-celeste py-3"></div>
+                                        <div class="col-4 menos-margin-60" onclick="fuentesBiblio(1,0)">
+                                            <div class="d-flex justify-content-center">
+                                                <div class="imgUnidad6 bg-celeste rounded-circle p-3 text-center w-50 menos-margin-l-100">
+                                                    <img src="assets/img/img_ova/dosier.png" class="w-50 p-2">
+                                                </div>
+                                            </div>
+                                            <div class="textUnidad6 bg-celeste border-default text-center p-3 menos-margin-80 menos-margin-r-100 ml-5">
+                                                <h5>Fuentes terciarias</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row d-flex justify-content-center">
+                                        <div class="col-8 bg-white border-default p-5">
+                                            <p>Son documentos donde se registran referencias a otros documentos de características diversas. 
+                                            Son útiles para detectar fuentes no documentales como organizaciones que realizan o financian estudios, 
+                                            asociaciones científicas, entre otras. (Danhke, 1989).</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            `;
+            $("#contenido-fuentes-padre").html(conjunto)
+        }
+    }
+}
