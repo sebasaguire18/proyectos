@@ -15,11 +15,33 @@
 .text_morado{
 	color: #45073d;
 }
-
+.text-reducido{
+  font-size: 12px;
+}
 .justificado{
 	text-align: justify;
 }
 
+
+.hidden{
+	visibility: hidden;
+	opacity: 0;
+}
+.border_r{
+	border-radius: 45px!important;
+}
+.border-1{
+	border-radius: 45px 0 0 0!important;
+}
+.border-2{
+	border-radius: 0 45px 0 0!important;
+}
+.border-3{
+  border-radius: 0 0 0 45px!important;
+}
+.border-4{
+  border-radius: 0 0 45px 0!important;
+}
 .banner{
 	background-image: url(../assets/img/img_ova/banner_azul.png);
   padding: 12px;
@@ -31,6 +53,17 @@
   display: flex;
 
 }
+
+.bg-color-2{
+	background: #896bf3;
+}
+.bg-color-3{
+	background: #677df5;
+}
+.bg-color-4{
+	background: #65b0f1;
+}
+
 
 .content-banner{
   width:50%;
@@ -116,9 +149,6 @@
     margin-top: 48px;
     position: absolute;
     cursor: pointer;
-}
-.t_1{
-
 }
 .t_2{
 	background-image: url(../assets/img/img_ova/triangulo2.png);

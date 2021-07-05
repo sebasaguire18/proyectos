@@ -381,3 +381,83 @@ function cambiacontenido2(opcion){
 //         $("#info_unidad2").html(conjunto)
 //     }
 // }
+
+function cardPara4(num,ventana){
+    if (ventana==0) {
+        $("#card4-1").addClass('hidden')
+        $("#card4-2").addClass('hidden')
+        $("#card4-3").addClass('hidden')
+        $("#card4-4").addClass('hidden')
+        var conjunto = `<div class="col-6 bg-color-2 text-center border-1" id="card4-1" onclick="cardPara4(1,1)"> <img src="assets/img/img_ova/buscar.png" class="w-50 p-3" id="img-card4-1"></div>
+                        <div class="col-6 bg-color text-center border-2" id="card4-2" onclick="cardPara4(2,1)"> <img src="assets/img/img_ova/navegador.png" class="w-50 p-4" id="img-card4-2"></div>
+                        <div class="col-6 bg-color-3 text-center border-3" id="card4-3" onclick="cardPara4(3,1)"> <img src="assets/img/img_ova/analitica.png" class="w-50 p-4" id="img-card4-3"></div>
+                        <div class="col-6 bg-color-4 text-center border-4" id="card4-4" onclick="cardPara4(4,1)"> <img src="assets/img/img_ova/busqueda.png" class="w-50 p-4" id="img-card4-4"></div>`;
+        $("#card4-padre").html(conjunto)
+    }
+    if (ventana==1) {
+        $("#card4-1").addClass('hidden')
+        $("#card4-2").addClass('hidden')
+        $("#card4-3").addClass('hidden')
+        $("#card4-4").addClass('hidden')
+        if (num==1) {
+            var conjunto = `
+            <div class="col-6 bg-white border-1 justify-content pt-2 text-black" id="card4-1" onclick="cardPara4(1,0)> 
+                <ul class="text-reducido">
+                    <p><b>Inicio de la revisión</b></p>
+                    <li class="text-reducido">Creswell (2005) recomienda escribir un título preliminar de la investigación y seleccionar dos o tres palabras “clave” que capten la idea central de la investigación o utilizar las que autores destacados en el campo suelen plantear. Es una buena manera de comenzar una búsqueda.</li>
+                    <li class="text-reducido">Se recomienda iniciar la revisión acudiendo a expertos en el tema o a través de fuentes secundarias o terciarias, ya que esas personas se vuelven especialistas en el tema y es fundamental aprovechar su esfuerzo.</li>
+                    <li class="text-reducido">Buscar en bancos o bases de datos físicas y electrónicas.</li>
+                </ul>
+            </div>
+            <div class="col-6 bg-color text-center border-2" id="card4-2" onclick="cardPara4(2,0)"> <img src="assets/img/img_ova/navegador.png" class="w-50 p-4" id="img-card4-2"></div>
+            <div class="col-6 bg-color-3 text-center border-3" id="card4-3" onclick="cardPara4(3,0)"> <img src="assets/img/img_ova/analitica.png" class="w-50 p-4" id="img-card4-3"></div>
+            <div class="col-6 bg-color-4 text-center border-4" id="card4-4" onclick="cardPara4(4,0)"> <img src="assets/img/img_ova/busqueda.png" class="w-50 p-4" id="img-card4-4"></div>
+            `;
+            $("#card4-padre").html(conjunto)
+        }
+        if (num==2) {
+            var conjunto = `
+            <div class="col-6 bg-color-2 text-center border-1" id="card4-1" onclick="cardPara4(1,0)"> <img src="assets/img/img_ova/buscar.png" class="w-50 p-3" id="img-card4-1"></div>
+            <div class="col-6 bg-white border-2 justify-content p-4 text-black" id="card4-2"  onclick="cardPara4(2,0)> 
+            <ul class="text-reducido">
+                <p><b>Obtención de la literatura</b></p><br>
+                    <li class="text-reducido">Una vez identificadas las fuentes primarias es necesario localizarlas en las bibliotecas físicas y/o electrónicas.</li>
+                </ul>
+            </div>
+            <div class="col-6 bg-color text-center border-3" id="card4-3" onclick="cardPara4(3,0)"> <img src="assets/img/img_ova/analitica.png" class="w-50 p-4" id="img-card4-3"></div>
+            <div class="col-6 bg-color-4 text-center border-4" id="card4-4" onclick="cardPara4(4,0)"> <img src="assets/img/img_ova/busqueda.png" class="w-50 p-4" id="img-card4-4"></div>
+            `;
+            $("#card4-padre").html(conjunto)
+        }
+        if (num==3) {
+            var conjunto = `
+                <div class="col-6 bg-color-2 text-center border-1" id="card4-1" onclick="cardPara4(1,0)"> <img src="assets/img/img_ova/buscar.png" class="w-50 p-3" id="img-card4-1"></div>
+                <div class="col-6 bg-color text-center border-2" id="card4-2" onclick="cardPara4(2,0)"> <img src="assets/img/img_ova/navegador.png" class="w-50 p-4" id="img-card4-2"></div>
+                <div class="col-6 bg-white border-3 justify-content pt-2 text-black" id="card4-3"  onclick="cardPara4(3,0)> 
+                    <ul class="text-reducido">
+                        <p><b>Consulta de la literatura</b></p>
+                        <p class="text-reducido">Seleccionar las que serán de utilidad para el marco teórico específico, teniendo como base preguntas como: <i>¿La referencia se relaciona con el problema de investigación? ¿Qué aspecto trata? ¿Ayuda a resolver más rápido y profundamente la investigación?</i></p>
+                        <li class="text-reducido">La bibliografía extranjera debe manejarse como guía para ayudar a definir el enfoque y tratamiento del problema solamente, ya que la información y teorías presentadas fueron elaboradas para otros contextos y situaciones.</li>
+                    </ul>
+                </div>
+                <div class="col-6 bg-color-4 text-center border-4" id="card4-4" onclick="cardPara4(4,0)"> <img src="assets/img/img_ova/busqueda.png" class="w-50 p-4" id="img-card4-4"></div>
+            `;
+            $("#card4-padre").html(conjunto)
+        }
+        if (num==4) {
+            var conjunto = `
+                <div class="col-6 bg-color-2 text-center border-1" id="card4-1" onclick="cardPara4(1,0)"> <img src="assets/img/img_ova/buscar.png" class="w-50 p-3" id="img-card4-1"></div>
+                <div class="col-6 bg-color text-center border-2" id="card4-2" onclick="cardPara4(2,0)"> <img src="assets/img/img_ova/navegador.png" class="w-50 p-4" id="img-card4-2"></div>
+                <div class="col-6 bg-color-3 text-center border-3" id="card4-3" onclick="cardPara4(3,0)"> <img src="assets/img/img_ova/analitica.png" class="w-50 p-4" id="img-card4-3"></div>
+                <div class="col-6 bg-white border-4  pt-4 text-black" id="card4-4" onclick="cardPara4(4,0)> 
+                    <ul class="text-reducido">
+                        <p><b>Extracción y recopilación de la información</b></p><br>
+                        <li class="text-reducido">Existen diferentes maneras de recopilar la información extraída, lo importante es extraer todos los datos e ideas necesarias para la elaboración del marco teórico.</li>
+                        <li class="text-reducido">Una vez extraída y recopilada la información se puede comenzar a elaborar el marco teórico integrando toda la información.</li>
+                    </ul>
+                </div>
+            `;
+            $("#card4-padre").html(conjunto)
+        }
+    }
+}
