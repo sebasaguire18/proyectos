@@ -28,12 +28,70 @@
 .azul_uno{
 	background: #B7CBD9;
 }
+.bg-color{
+	background: var(--bg-color)!important;
+}
+.bg-color-dark{
+	background: var(--bg-color-dark)!important;
+}
+.bg-color-claro{
+	background: var(--bg-color-claro)!important;
+}
+.bg-color-naranja{
+	background: #ed7d31!important;
+}
+
+.border-45{
+	border-radius: 45px;
+}
+.border-25{
+	border-radius: 25px;
+}
+.border-10{
+	border-radius: 10px;
+}
+
+.border-r{
+	border-right: 3px solid var(--bg-color)!important;
+}
+
+.menos-margin-50{
+	margin-left: -50px;
+}
+.menos-margin-100{
+	margin-left: -100px;
+}
+.menos-margin-120{
+	margin-left: -120px;
+}
+.menos-margin-150{
+	margin-left: -150px;
+}
+.menos-marginR-50{
+	margin-right: -50px;
+}
+.menos-marginT-50{
+	margin-top: -50px;
+}
+.menos-marginB-50{
+	margin-bottom: -50px;
+}
+.menos-marginB-100{
+	margin-bottom: -100px;
+}
+
+.hr-negro{
+	border-top: 5px solid black!important;
+}
+.hr-verde-claro{
+	border-top: 2px solid var(--bg-color)!important;
+}
 
 .card1{
-	padding: 0px;
 	border-radius: 45px;
-	border: solid rgba(0, 117, 168, 1);
-	min-height: 600px;
+	background: var(--bg-color-claro);
+	border: solid var(--bg-color-dark);
+	max-height: 220px!important;
 }
 
 .card_top{
@@ -58,10 +116,9 @@
 }
 
 .card2{
-	padding: 0px;
 	border-radius: 45px;
-	border: solid rgba(51, 153, 255, 1);
-	min-height: 600px;
+	background: var(--bg-color-claro);
+	max-height: 220px!important;
 }
 
 .card2_bottom{
@@ -75,10 +132,9 @@
 	background-color: rgba(51, 153, 255, 1);
 }
 .card3{
-	padding: 0px;
-	border-radius: 45px;
-	border: solid rgba(51, 189, 255, 1);
-	min-height: 600px;
+	background: #385723;
+	min-height: 180px;
+	max-height: 180px;
 }
 
 .card3_bottom{
@@ -183,7 +239,9 @@
 .cursor{
 	cursor: pointer;
 }
-
+.cursor-none{
+	cursor: default!important;
+}
 .radius_modal{
 	border-radius: 30px;
 }
@@ -539,6 +597,57 @@ p, button{
 }
 
 .linea_scroll7 {
+  font-size: 50px;
+    margin: 0px;
+    position: relative;
+    top: -32px;
+    color: #00414c;
+}
+/* scroll modal*/
+.custom-scrollbar8{
+  position: relative;
+  height: 219px;
+  overflow: hidden;
+}
+
+.custom-scrollbar__inner8{
+  height: 100%;
+  width: calc(100% + 40px);
+  padding-right: 75px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+/*.custom-scrollbar__inner6, .custom-scrollbar__inner7 div {
+  margin-bottom: 16px;
+}
+.custom-scrollbar__inner6, .custom-scrollbar__inner7 img {
+  max-width: 100%;
+}*/
+
+ .custom-scrollbar__bar8 {
+  position: absolute;
+  top: 18px;
+  bottom: 20px;
+  background:#FFFFFF;
+  width: 3px;
+  right: 30px;
+  /*right: 8px;*/
+  border-radius: 4px;
+}
+
+.custom-scrollbar__knob8{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  transform: translate(-50%, -50%);
+  will-change: top;
+}
+
+.linea_scroll8 {
   font-size: 50px;
     margin: 0px;
     position: relative;

@@ -11,6 +11,7 @@ $( document ).ready(function() {
     var scrollOffset = "";
     $(".modal_scroll6").on('click', modal_scroll6);
     $(".modal_scroll7").on('click', modal_scroll7);
+    $(".modal_scroll8").on('click', modal_scroll8);
     
 });
 
@@ -32,6 +33,16 @@ function modal_scroll7(){
     knob = document.querySelector('.custom-scrollbar__knob7');
     bar = document.querySelector('.custom-scrollbar__bar7');
     container = document.querySelector('.custom-scrollbar__inner7');
+    scroll();
+}
+function modal_scroll8(){
+    dragging = "";
+    diff = "";
+    newTop = "";
+    scrollOffset = "";
+    knob = document.querySelector('.custom-scrollbar__knob8');
+    bar = document.querySelector('.custom-scrollbar__bar8');
+    container = document.querySelector('.custom-scrollbar__inner8');
     scroll();
 }
 

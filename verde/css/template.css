@@ -101,6 +101,9 @@ iframe{
 .color-text{
   color: var(--bg-color);
 }
+.color-title{
+  color: var(--bg-color-dark);
+}
 
 .titulo-ova{
   background-image: url(../assets/img/img_ova/Metodologia-de-la-investigación-03.png);
@@ -350,9 +353,9 @@ iframe{
   color: #777777;
 }
 
-.img-circle {
-    /border-radius: 50%;/
-}
+/* .img-circle {
+    border-radius: 50%;
+} */
 
 
 /*modales inicio*/
@@ -516,7 +519,7 @@ svg circle{
     transform: translate(78px, -14px);
 }
 
-/Claculo para simular el porcent/
+/* /Claculo para simular el porcent/ */
 svg circle:nth-child(2){
     stroke-dasharray: 200;
     stroke-dashoffset: 200;

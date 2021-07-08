@@ -42,6 +42,7 @@ $( document ).ready(function() {
     $(".modal_scroll3").on('click', modal_scroll3);
     $(".modal_scroll4").on('click', modal_scroll4);
     $(".modal_scroll7").on('click', modal_scroll7);
+    $(".modal_scroll8").on('click', modal_scroll8);
 
     $(".citar").on('click', citar);
     funcion_vanvas();
@@ -379,6 +380,17 @@ function modal_scroll7(){
     knob = document.querySelector('.custom-scrollbar__knob7');
     bar = document.querySelector('.custom-scrollbar__bar7');
     container = document.querySelector('.custom-scrollbar__inner7');
+    scroll();
+}
+
+function modal_scroll8(){
+    dragging = "";
+    diff = "";
+    newTop = "";
+    scrollOffset = "";
+    knob = document.querySelector('.custom-scrollbar__knob8');
+    bar = document.querySelector('.custom-scrollbar__bar8');
+    container = document.querySelector('.custom-scrollbar__inner8');
     scroll();
 }
 
