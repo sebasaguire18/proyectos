@@ -96,28 +96,68 @@ function controlSlides(num){
             break;
         case 5:
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Función social de la universidad");
-            dragging = "";
-            diff = "";
-            newTop = "";
-            scrollOffset = "";
-            knob = document.querySelector('.custom-scrollbar__knob2');
-            bar = document.querySelector('.custom-scrollbar__bar2');
-            container = document.querySelector('.custom-scrollbar__inner2');
-            scroll();
+            // dragging = "";
+            // diff = "";
+            // newTop = "";
+            // scrollOffset = "";
+            // knob = document.querySelector('.custom-scrollbar__knob2');
+            // bar = document.querySelector('.custom-scrollbar__bar2');
+            // container = document.querySelector('.custom-scrollbar__inner2');
+            // scroll();
             break;
         case 6:
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Función social de la universidad");
             break;
         case 7:
             setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
-            $("#content-ova").load("base/unidades/unidad2.html");
-            tema = 6;
             break;
+        case 8:
+            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
+            break;
+        case 9:
+            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
+            break;
+        case 10:
+            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
+            break;
+        case 11:
+            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
+            break;
+        case 12:
+            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
+            break;
+        case 13:
+            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
+            break;
+        case 14:
+            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
+            break;
+        case 15:
+            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
+            break;
+        case 16:
+            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
+            break;
+        case 17:
+            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
+            $("#content-ova").load("base/unidades/unidad2.html");
+            break;
+            tema = 6;
         default:
             break;
     }
 }
 
+function scroll_set(num) {
+  dragging = "";
+  diff = "";
+  newTop = "";
+  scrollOffset = "";
+  knob = document.querySelector('.custom-scrollbar__knob'+num);
+  bar = document.querySelector('.custom-scrollbar__bar'+num);
+  container = document.querySelector('.custom-scrollbar__inner'+num);
+  scroll();
+}
 
 function scroll_p10(){
     dragging = "";

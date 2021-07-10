@@ -54,7 +54,13 @@
 .border-r{
 	border-right: 3px solid var(--bg-color)!important;
 }
+.border-oscuro{
+	border: solid 2px #385723!important;
+}
 
+.menos-margin-25{
+	margin-left: -25px;
+}
 .menos-margin-50{
 	margin-left: -50px;
 }
@@ -70,8 +76,20 @@
 .menos-marginR-50{
 	margin-right: -50px;
 }
+.menos-marginR-100{
+	margin-right: -100px;
+}
+.menos-marginT-10{
+	margin-top: -10px;
+}
+.menos-marginT-25{
+	margin-top: -25px;
+}
 .menos-marginT-50{
 	margin-top: -50px;
+}
+.menos-marginT-100{
+	margin-top: -100px;
 }
 .menos-marginB-50{
 	margin-bottom: -50px;
@@ -146,6 +164,11 @@
 	border-bottom-right-radius: 42px;
 	border-bottom-left-radius: 42px;
 	background-color: rgba(51, 189, 255, 1);
+}
+
+.card4{
+	background: var(--bg-color-claro);
+	max-height: 150px;
 }
 
 /*.card_flecha{
@@ -452,7 +475,7 @@ p, button{
 
 .custom-scrollbar10, .custom-scrollbar11{
 	position: relative;
-	height: 150px;
+	height: 250px;
 }
 .custom-scrollbar__bar10, .custom-scrollbar__bar11, .custom-scrollbar__bar12, .custom-scrollbar__bar13, .custom-scrollbar__bar14, .custom-scrollbar__bar15, .custom-scrollbar__bar16, .custom-scrollbar__bar17, .custom-scrollbar__bar18{
 	position: absolute;
