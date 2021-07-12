@@ -57,8 +57,14 @@
 .border-b{
 	border-bottom: 3px solid var(--bg-color)!important;
 }
+.border-b-big{
+	border-bottom: 5px solid var(--bg-color-dark)!important;
+}
 .border-oscuro{
 	border: solid 2px #385723!important;
+}
+.border-claro{
+	border: solid 2px var(--bg-color);
 }
 
 .menos-margin-25{

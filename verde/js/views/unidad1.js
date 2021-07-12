@@ -74,72 +74,67 @@ function slide_link(num){
 function controlSlides(num){
     switch (parseInt(num)) {
         case 1:
-            setMigaja("Unidades de aprendizaje","1. La ciencia: concepto y definición ", ">");
-            dragging = "";
-            diff = "";
-            newTop = "";
-            scrollOffset = "";
-            knob = document.querySelector('.custom-scrollbar__knob');
-            bar = document.querySelector('.custom-scrollbar__bar');
-            container = document.querySelector('.custom-scrollbar__inner');
-            /*scroll();*/
-            break;
-        case 2:
-            $('.pasos').removeClass('efectos');
-            setMigaja("Unidades de aprendizaje","1. La ciencia: concepto y definición ", "Método hipotético");            
-            break;
-        case 3:
-            setMigaja("Unidades de aprendizaje","1. La ciencia: concepto y definición ", "Tipos de conocimiento");
-            break;
-        case 4:
-            setMigaja("Unidades de aprendizaje","1. La ciencia: concepto y definición ", "Tipos de conocimiento");
-            break;
-        case 5:
-            setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Función social de la universidad");
+            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano", ">");
             // dragging = "";
             // diff = "";
             // newTop = "";
             // scrollOffset = "";
-            // knob = document.querySelector('.custom-scrollbar__knob2');
-            // bar = document.querySelector('.custom-scrollbar__bar2');
-            // container = document.querySelector('.custom-scrollbar__inner2');
-            // scroll();
+            // knob = document.querySelector('.custom-scrollbar__knob');
+            // bar = document.querySelector('.custom-scrollbar__bar');
+            // container = document.querySelector('.custom-scrollbar__inner');
+            // /*scroll();*/
+            break;
+        case 2:
+            $('.pasos').removeClass('efectos');
+            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La cuestión del origen del “ethnos” latinoamericano");
+            break;
+        case 3:
+            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La cuestión del origen del “ethnos” latinoamericano");
+            break;
+        case 4:
+            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La cuestión del origen del “ethnos” latinoamericano");
+            break;
+        case 5:
+            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La cuestión del origen del “ethnos” latinoamericano");
             break;
         case 6:
-            setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Función social de la universidad");
+            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La cuestión del origen del “ethnos” latinoamericano");
             break;
         case 7:
-            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
+            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La cuestión del origen del “ethnos” latinoamericano");
             break;
         case 8:
-            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
+            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La cuestión del origen del “ethnos” latinoamericano");
             break;
         case 9:
-            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
+            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
             break;
         case 10:
-            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
+            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
             break;
         case 11:
-            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
+            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
             break;
         case 12:
-            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
+            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
             break;
         case 13:
-            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
+            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
             break;
         case 14:
-            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
+            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
             break;
         case 15:
-            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
+            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
             break;
         case 16:
-            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
+            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
             break;
         case 17:
-            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
+            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
+            break;
+        case 18:
+            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
             $("#content-ova").load("base/unidades/unidad2.html");
             break;
             tema = 6;
