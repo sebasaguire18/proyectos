@@ -30,7 +30,7 @@ $( document ).ready(function() {
     });
     /*funcion_vanvas();
     funcion_canvas2();*/
-    /*setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");*/
+    /*setMigaja("Unidades de aprendizaje","2. Conjuntos",";*/
     /*slide_predeterminado();*/
 
     /*$(".t_1").on('click', cambiacontenido2(1));
@@ -62,7 +62,7 @@ function slide_link(num){
 function controlSlides2(num){
     switch (parseInt(num)) {
         case 0:
-            setMigaja("Unidades de aprendizaje","2. Acercamiento epistemológico a la economía como ciencia ","El método en la economía");
+            setMigaja("Unidades de aprendizaje","2. Fundamentación del pensamiento autónomo","La idea de America Latina");
             $("#content-ova").load("base/unidades/unidad1.html");
             tema = 6;
             break;
@@ -73,31 +73,37 @@ function controlSlides2(num){
                               </p>
                             </div>`;
             $('.pdfs').html(pdf);
-            setMigaja("Unidades de aprendizaje","2. Acercamiento epistemológico a la economía como ciencia ","El método en la economía");
+            setMigaja("Unidades de aprendizaje","2. Fundamentación del pensamiento autónomo","La idea de America Latina");
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","2. Acercamiento epistemológico a la economía como ciencia ","El método en la economía");
+            setMigaja("Unidades de aprendizaje","2. Fundamentación del pensamiento autónomo","La idea de America Latina");
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");
+            setMigaja("Unidades de aprendizaje","2. Fundamentación del pensamiento autónomo","La idea de America Latina");
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");
+            setMigaja("Unidades de aprendizaje","2. Fundamentación del pensamiento autónomo","La idea de America Latina");
             break;
         case 5:
-            setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");
+            setMigaja("Unidades de aprendizaje","2. Fundamentación del pensamiento autónomo","La idea de America Latina");
             break;
         case 6:
-            setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");
+            setMigaja("Unidades de aprendizaje","2. Fundamentación del pensamiento autónomo","La idea de America Latina");
             break;
         case 7:
-            setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");
+            setMigaja("Unidades de aprendizaje","2. Fundamentación del pensamiento autónomo","La idea de America Latina");
             break;
         case 8:
-            setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");
+            setMigaja("Unidades de aprendizaje","2. Fundamentación del pensamiento autónomo","La idea de America Latina");
             break;
         case 9:
-            setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");
+            setMigaja("Unidades de aprendizaje","2. Fundamentación del pensamiento autónomo","La idea de America Latina");
+            break;
+        case 10:
+            setMigaja("Unidades de aprendizaje","2. Fundamentación del pensamiento autónomo","La idea de America Latina");
+            break;
+        case 11:
+            setMigaja("Unidades de aprendizaje","2. Fundamentación del pensamiento autónomo","La idea de America Latina");
             $("#content-ova").load("base/unidades/unidad3.html");
             tema = 9;
             break;
