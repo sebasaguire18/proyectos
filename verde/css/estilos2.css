@@ -58,3 +58,16 @@
   text-align: center;
   padding-top: 4px;
 }
+
+.esqueleto{
+  background: url(../assets/img/img_ova/fondo1.png);
+  background-repeat: no-repeat;
+  background-size: 80% 75%;
+  background-position-x: center;
+  height: 520px;
+}
+
+.targeta{
+  margin: 0%;
+  padding: 0%;
+}

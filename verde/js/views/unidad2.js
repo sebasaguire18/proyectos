@@ -80,9 +80,23 @@ function controlSlides2(num){
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");
-            
             break;
         case 4:
+            setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");
+            break;
+        case 5:
+            setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");
+            break;
+        case 6:
+            setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");
+            break;
+        case 7:
+            setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");
+            break;
+        case 8:
+            setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");
+            break;
+        case 9:
             setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");
             $("#content-ova").load("base/unidades/unidad3.html");
             tema = 9;
@@ -91,6 +105,17 @@ function controlSlides2(num){
         default:
             break;
     }
+}
+
+function scroll_set(num) {
+  dragging = "";
+  diff = "";
+  newTop = "";
+  scrollOffset = "";
+  knob = document.querySelector('.custom-scrollbar__knob'+num);
+  bar = document.querySelector('.custom-scrollbar__bar'+num);
+  container = document.querySelector('.custom-scrollbar__inner'+num);
+  scroll();
 }
 
 function pantalla2_1(num){
