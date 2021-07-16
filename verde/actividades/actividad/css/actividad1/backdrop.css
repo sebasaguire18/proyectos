@@ -108,13 +108,8 @@ html{
     transition: all .8s;
     z-index: 1002;
 }
-@media (max-width: 767px) {
-    .backdrop {
-        padding: 5px;
-    }
-}
 .backdrop.actividad{
-    background: #0075A8;
+    background: #ffd200;
 }
 .backdrop.recurso{
     background: #49a5aa;
@@ -125,10 +120,10 @@ html{
 }
 .backdrop header{
     font-size: 1.3em;
-    padding: 10px 20px;
+    padding: 20px 40px;
 }
 .backdrop.actividad header{
-    /* background: rgb(51 122 183 / 50%); */
+    background: rgba(255,210,0,.4);
 }
 .backdrop.recurso header{
     background: rgba(73,165,170,.4);
@@ -156,7 +151,7 @@ html{
     padding: 2px 25px;
 }
 .backdrop.actividad header h2{
-    color: #337ab7;
+    color: #ffd200;
 }
 .backdrop.recurso header h2{
     color: #49a5aa;
@@ -169,6 +164,7 @@ html{
     overflow: auto;
 }
 .backdrop .fondo {
+    /*background-image: url(../img/logo-footer.png), url(../img/patron-fondo.png);*/
     background-color: #fff;
     position: relative;
     background-repeat: no-repeat, repeat;
@@ -176,7 +172,7 @@ html{
     padding-bottom: 65px;
 }
 .btn-primary{
-    background: #0075a8;
+    background: #ad123c;
     border: none;
     border-radius: 0;
     font-family: 'Barmeno', sans-serif;
@@ -189,10 +185,10 @@ html{
     outline: 0;
 }
 .btn-secundary{
-    background: #337ab7;
+    background: #ffd200;
     border: none;
     border-radius: 0;
-    color: #fff;
+    color: #ad123c;
     font-family: 'Barmeno', sans-serif;
     font-size: 1.15em;
     font-weight: 600;
@@ -215,10 +211,10 @@ html{
     width: 300px;
 }
 .calificacion .modal-body.exito{
-    background: url('../../img/img1/bien.png') center no-repeat;
+    background: url('../../img/img3/bien.png') center no-repeat;
 }
 .calificacion .modal-body.parcial{
-    background: url('../../img/img1/mal.png') center no-repeat;
+    background: url('../../img/img3/mal.png') center no-repeat;
 }
 .calificacion .modal-body .mensaje{
     background: #fff;
@@ -302,12 +298,4 @@ html{
 .calificacion .modal-footer {
     border: none;
     text-align: center;
-}
-
-.texto-actividad{
-    background: #ffdd37;
-    padding: 10px;
-    border-radius: 20px;
-    -webkit-box-shadow: -6px 5px 21px 2px rgb(0 0 0 / 50%);
-    box-shadow: -6px 5px 21px 2px rgb(0 0 0 / 50%);
 }

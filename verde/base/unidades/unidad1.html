@@ -203,7 +203,7 @@
                                 <img src="assets/img/img_ova/pdf.png" width="150px">
                               </div>
                               <div class="col-3">
-                                  <button class="btn btn-lg menos-margin-50 pl-5 pr-4 bg-color text-white">Ver pdf</button>
+                                  <a href="assets/PDF/UNIDAD1/EstadosenCrisis.pdf" target="_blank" class="btn btn-lg menos-margin-50 pl-5 pr-4 bg-color text-white">Ver pdf</a>
                               </div>
                             </div>
                        </div>
@@ -246,12 +246,16 @@
                               </div>
                               <div class="d-flex text-center mr-5 menos-marginT-50">
                                 <div class="mr-4">
-                                  <img src="assets/img/img_ova/pdf.png" width="100px">
-                                  <p class="bg-color border-10 p-4 h4"><b>Lectura 1</b> <br><br> Estados en crisis</p>
+                                  <a href="assets/PDF/UNIDAD1/EstadosenCrisis.pdf" target="_blank" style="text-decoration: none;"> 
+                                    <img src="assets/img/img_ova/pdf.png" width="100px">
+                                    <p class="bg-color border-10 p-4 h4"><b>Lectura 1</b> <br><br> Estados en crisis</p>
+                                  </a>
                                 </div>
                                 <div class="ml-4">
-                                  <img src="assets/img/img_ova/pdf.png" width="100px">
-                                  <p class="bg-color border-10 p-4 h4"><b>Lectura 2</b> <br><br> Pueblos indígenas</p>
+                                  <a href="assets/PDF/UNIDAD1/Los Pueblos indígenas.pdf" target="_blank" style="text-decoration: none;">
+                                    <img src="assets/img/img_ova/pdf.png" width="100px">
+                                    <p class="bg-color border-10 p-4 h4"><b>Lectura 2</b> <br><br> Pueblos indígenas</p>
+                                  </a>
                                 </div>
                               </div>
                             </div>
@@ -319,8 +323,10 @@
                           </div>
                         </div>
                        </div>
+                       
                        <div id="unidad1-7" class="tab-pane" role="tabpanel">
                           <!-- actividad interactiva -->
+                          <iframe src="actividades/actividad/activi1/index.html" frameborder="0" allowfullscreen></iframe>
                        </div>
 
                        <div id="unidad1-8" class="tab-pane" role="tabpanel">
@@ -387,7 +393,7 @@
                             <img src="assets/img/img_ova/pdf.png" width="180px">
                           </div>
                           <div class="col-8">
-                            <button class="bg-color py-3 pr-3 pl-5 text-white btn menos-margin-100">Ver pdf “El discurso de la indianidad”</button>
+                            <a href="assets/PDF/UNIDAD1/El discurso de la indianidad.pdf" target="_blank" class="bg-color py-3 pr-3 pl-5 text-white btn menos-margin-100">Ver pdf “El discurso de la indianidad”</a>
                           </div>
                         </div>
                         </div>
@@ -410,7 +416,7 @@
                             </div>
                           </div>
                           <div class="col-6 p-4">
-                            <div class="row d-flex align-items-center">
+                            <div class="row d-flex align-items-center acordeon1" onclick="acordeon(1,'acordeon')">
                               <div class="col-4 zindex">
                                 <div class="u9 bg-white rounded-circle p-3 border-oscuro">
                                   <img src="assets/img/img_ova/percepcion.png" class="w-100 h-100">
@@ -422,7 +428,14 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="row d-flex align-items-center my-4">
+                            <div class="row d-none contenidoAcordeon1">
+                              <div class="col-10 p-3 menos-marginT-75">
+                                <div class="px-3 pb-3 pt-5 mt-2" style="background: white; border: dashed #00441B 5px; border-bottom-left-radius: 25px; border-bottom-right-radius: 25px; border-top: none;">
+                                  <p class="justificado text-black"> El ideal económico y religioso son percepciones que “determinan que Colón percibiera al “Otro” de una manera altamente etnocéntrica: - El indígena es simplemente diferente, homogéneo y carente de atributos culturales” (Garduño, 2010, p.1), su estatura y color de piel lo diferenciaban de lo demás , a su vez, resalta la ausencia de lenguaje y religión en todos, lo que evidencia que lo que descubrió Colón no fueron los americanos, en gran medida porque su mirada etnocéntrica del “Otro”  estuvo asociada a una idea de superioridad que limitó su real conocimiento justificando el esclavismo. </p>
+                                </div>
+                              </div>
+                            </div><br>
+                            <div class="row d-flex align-items-center acordeon2" onclick="acordeon(2,'acordeon')">
                               <div class="col-4 zindex">
                                 <div class="u9 bg-white rounded-circle p-3 border-oscuro">
                                   <img src="assets/img/img_ova/concepcion.png" class="w-100 h-100">
@@ -434,7 +447,14 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="row d-flex align-items-center">
+                            <div class="row d-none contenidoAcordeon2">
+                              <div class="col-10 p-3 menos-marginT-75">
+                                <div class="px-3 pb-3 pt-5 mt-2" style="background: white; border: dashed #00441B 5px; border-bottom-left-radius: 25px; border-bottom-right-radius: 25px; border-top: none;">
+                                  <p class="justificado text-black"> Concebir a los nativos indígenas como otros sin identidad, fortaleció la idea de que su papel era ser parte de un hermoso paisaje natural del Nuevo Mundo y por tanto, sujetos de exhibición en Europa, por ello, la relación con los indígenas se centró en inventarlos a partir de “preconcepciones religiosas o novelísticas como nobles salvajes, como los mejores seres en el mundo, o como los más crueles, hostiles y cobardes, cuya esclavitud se justificaba por sus criminales prácticas caníbales, por esa razón había que transformarlos en lugar de asimilarlos” (GARDUÑO, 2010, p.1).  </p>
+                                </div>
+                              </div>
+                            </div><br>
+                            <div class="row d-flex align-items-center acordeon3" onclick="acordeon(3,'acordeon')">
                               <div class="col-4 zindex">
                                 <div class="u9 bg-white rounded-circle p-4 border-oscuro">
                                   <img src="assets/img/img_ova/observacion.png" class="w-100 h-100">
@@ -443,6 +463,13 @@
                               <div class="col-6">
                                 <div class="u9Text bg-color menos-margin-50 border-10 cursor">
                                     <p class="text-white h4 pl-5 py-3">Obvservación</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row d-none contenidoAcordeon3">
+                              <div class="col-10 p-3 menos-marginT-75">
+                                <div class="px-3 pb-3 pt-5 mt-2" style="background: white; border: dashed #00441B 5px; border-bottom-left-radius: 25px; border-bottom-right-radius: 25px; border-top: none;">
+                                  <p class="justificado text-black"> La mirada sobre ese otro latinoamericano virgen de sí mismo y de su conocimiento no fue la única percepción que acompañó la relación América-Europa, también se logró evidenciar la necesidad de su asimilación por autores como Sepúlveda, Cortés y Las Casas (Garduño, 2010) desde aspectos como la igualdad y la tolerancia sin desconocer el poder de la corona, ésta percepción legitimó la negación del indígena como otro y abrió el paso para que la lucha por su reconocimiento y sus derechos estuviera siempre presente en las comunidades indígenas latinoamericanas. <b> Haga clic en Sabía que para ampliar la información:</b></p>
                                 </div>
                               </div>
                             </div>
@@ -480,7 +507,7 @@
                                 <img src="assets/img/img_ova/pdf.png" width="150px">
                               </div>
                               <div class="col-3">
-                                  <button class="btn btn-lg menos-margin-50 pl-5 pr-4 bg-color text-white">Ver pdf</button>
+                                  <a href="assets/PDF/UNIDAD1/La larga lucha.pdf" target="_blank" class="btn btn-lg menos-margin-50 pl-5 pr-4 bg-color text-white">Ver pdf</a>
                               </div>
                             </div>
                           </div>
@@ -537,7 +564,42 @@
                        </div>
 
                        <div id="unidad1-13" class="tab-pane" role="tabpanel">
-                        <!-- Falta imagen del mapa con las localizaciones -->
+                        <div class="row">
+                          <div class="col-md-12">
+                              <div class="titulo-ova">
+                                  <h3 class="ml-3 color-text">Pensamiento latinoamericano</h3>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col">
+                            <p class="color-text"><b>La mirada Europea: América como otro/</b><br>La superación del eurocentrismo</p>
+                            <p class="jsutificado">El etnocentrismo consiste en creer que la propia cultura es superior y que las demás culturas son inferiores. La historia tiene muchos ejemplos: los griegos llamaban a los “otros”, a los no-griegos, bárbaros, es decir, casi animales o seres inferiores, los romanos creían que los demás eran bárbaros, los españoles en el siglo XVI creían que su cristianismo era la única religión verdadera, los alemanes en la época del nazismo creían que su raza, la raza aria, blanca, era superior a las otras razas del mundo, esto nos enseña que el etnocentrismo ha sido común a través de la historia, es una actitud común de los pueblos. (Pachón Soto,2016, p.80) <b>y entonces, ¿Cuál es la relación del etnocentrismo con el eurocentrimos? Pasa el cursor sobre cada uno de los pines del mapa y descúbrelo: </b></p>
+                          </div>
+                          <div style="width: 600px;">
+                            <div class="position-relative">
+                              <div class="position-absolute" style="width: 30px; top: 168px; left: 96px;">
+                                <img src="assets/img/img_ova/posicion-1.png" class="w-100 cursor"  data-toggle="modal" data-target="#modal-posicion1">
+                              </div>
+                              <div class="position-absolute" style="width: 30px; top: 265px; left: 100px;">
+                                <img src="assets/img/img_ova/posicion-2.png" class="w-100 cursor"  data-toggle="modal" data-target="#modal-posicion2">
+                              </div>
+                              <div class="position-absolute" style="width: 30px; top: 311px; left: 150px;">
+                                <img src="assets/img/img_ova/posicion-3.png" class="w-100 cursor"  data-toggle="modal" data-target="#modal-posicion3">
+                              </div>
+                              <div class="position-absolute" style="width: 30px; top: 180px; right: 287px;">
+                                <img src="assets/img/img_ova/posicion-4.png" class="w-100 cursor"  data-toggle="modal" data-target="#modal-posicion4">
+                              </div>
+                              <div class="position-absolute" style="width: 30px; top: 116px; right: 250px;">
+                                <img src="assets/img/img_ova/posicion-5.png" class="w-100 cursor"  data-toggle="modal" data-target="#modal-posicion5">
+                              </div>
+                              <div class="position-absolute" style="width: 30px; top: 168px; right: 215px;">
+                                <img src="assets/img/img_ova/posicion-6.png" class="w-100 cursor"  data-toggle="modal" data-target="#modal-posicion6">
+                              </div>
+                            </div>
+                            <img src="assets/img/img_ova/mapa.png" class="h-100 w-100">
+                          </div>
+                        </div>
                        </div>
 
                        <div id="unidad1-14" class="tab-pane" role="tabpanel">
@@ -598,7 +660,7 @@
                                 <img src="assets/img/img_ova/multimedia.png" width="150px">
                               </div>
                               <div class="col-3">
-                                  <button class="btn btn-lg menos-margin-50 pl-5 pr-5 py-2 bg-color border-10 text-white">Lectura</button>
+                                  <a href="assets/PDF/UNIDAD1/La tensión del pensamiento.pdf" target="_blank" class="btn btn-lg menos-margin-50 pl-5 pr-5 py-2 bg-color border-10 text-white">Lectura</a>
                               </div>
                             </div>
                           </div>
@@ -1069,6 +1131,275 @@
   </div>
 </div>
 
+<!-- modales unidad 1 - 13 -->
+<div class="modal fade" id="modal-posicion1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog centered-propio" role="document">
+    <div class="modal-content">
+      <div class="">
+        <div class="card-container manual-flip">
+          <div class="card">
+              <div class="front">
+                  <div class="cover" style="overflow: visible;">
+                    <div class="row">
+                      <div class="col-lg-4">
+                      </div>
+                      <div class="col-lg-4">
+                       
+                      </div>
+                      <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                        <div class="divcerrar">
+                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                            <img src="assets/img/img_ova/btn_closed_blue.png" style="width: 30px;" class="m-0 p-0">
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="user">
+                      <div class="border-white">
+                        <div class="radius-gray">
+                          <img class="img-circle" src="assets/img/img_ova/posicion-1.png"/>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="m-2">
+                    <div class="p-4">
+                      <p class="p_white justificado h4">
+                        Deconstruir el “heliocentrismo” ha sido una de las tareas iniciales para acabar con el eurocentrismo, implica desarmar otros ideales tales como la concepción de la modernidad desde la postura del descubrimiento y la razón; es importante mencionar  que lo único cierto es que sin la existencia de América Latina no habría existido la modernidad, ya que ésta es el resultado de la existencia de otras culturas tal como lo indica Leopoldo Zea: -“Todos los pueblos alimentan y posibilitan una Europa que va poco a poco desarrollándose, desechando como cáscaras vacías a los pueblos de los que se ha servido” (1990, p. 203).
+                      </p>
+                    </div>
+                  </div>
+              </div> <!-- end front panel -->
+          </div> <!-- end card -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modal-posicion2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog centered-propio" role="document">
+    <div class="modal-content">
+      <div class="">
+        <div class="card-container manual-flip">
+          <div class="card">
+              <div class="front">
+                  <div class="cover" style="overflow: visible;">
+                    <div class="row">
+                      <div class="col-lg-4">
+                      </div>
+                      <div class="col-lg-4">
+                       
+                      </div>
+                      <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                        <div class="divcerrar">
+                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                            <img src="assets/img/img_ova/btn_closed_blue.png" style="width: 30px;" class="m-0 p-0">
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="user">
+                      <div class="border-white">
+                        <div class="radius-gray">
+                          <img class="img-circle" src="assets/img/img_ova/posicion-2.png"/>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="m-2">
+                    <div class="p-4">
+                      <p class="p_white justificado h4">
+                        Uno de los ejemplos más significativos en Latinoamérica de la superación del eurocentrismo es el trabajo de Enrique Dussel, él busca plantear una historia universal distinta a la que ubica a Europa como el centro del conocimiento y la cultura, su fin ha sido demostrar que la línea histórica Grecia-Roma-Edad Media-Renacimiento y Edad Moderna no es correcta, es ideológica y además deja la historia y los aportes de muchos pueblos por fuera.</p>
+                    </div>
+                  </div>
+              </div> <!-- end front panel -->
+          </div> <!-- end card -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modal-posicion3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog centered-propio" role="document">
+    <div class="modal-content">
+      <div class="">
+        <div class="card-container manual-flip">
+          <div class="card">
+              <div class="front">
+                  <div class="cover" style="overflow: visible;">
+                    <div class="row">
+                      <div class="col-lg-4">
+                      </div>
+                      <div class="col-lg-4">
+                       
+                      </div>
+                      <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                        <div class="divcerrar">
+                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                            <img src="assets/img/img_ova/btn_closed_blue.png" style="width: 30px;" class="m-0 p-0">
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="user">
+                      <div class="border-white">
+                        <div class="radius-gray">
+                          <img class="img-circle" src="assets/img/img_ova/posicion-3.png"/>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="m-2">
+                    <div class="p-4">
+                      <p class="p_white justificado h4">
+                        Según Pachón Soto (2016): “En el siglo XIX, de hecho, Simón Bolívar, el libertador de Colombia, Venezuela, Ecuador, Perú y Bolivia, entendió al final de su vida que América no debía copiarse todo de Europa. Decía en 1828, cuando Suramérica ya se había independizado de España (...) Lo que Bolívar dice es que no debemos copiarnos de Europa, así ella pertenezca a nuestro pasado, a nuestra historia. Para Bolívar, es más importante darnos un gobierno, un Estado, un Derecho, con base en nuestra propia realidad, nuestra religión y nuestras costumbres”. (p.87)</p>
+                    </div>
+                  </div>
+              </div> <!-- end front panel -->
+          </div> <!-- end card -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modal-posicion4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog centered-propio" role="document">
+    <div class="modal-content">
+      <div class="">
+        <div class="card-container manual-flip">
+          <div class="card">
+              <div class="front">
+                  <div class="cover" style="overflow: visible;">
+                    <div class="row">
+                      <div class="col-lg-4">
+                      </div>
+                      <div class="col-lg-4">
+                       
+                      </div>
+                      <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                        <div class="divcerrar">
+                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                            <img src="assets/img/img_ova/btn_closed_blue.png" style="width: 30px;" class="m-0 p-0">
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="user">
+                      <div class="border-white">
+                        <div class="radius-gray">
+                          <img class="img-circle" src="assets/img/img_ova/posicion-4.png"/>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="m-2">
+                    <div class="p-4">
+                      <p class="p_white justificado h4">
+                        Para no olvidar…  </p>
+                        <ul class="text-white">
+                          <li>Las ventajas de la superación del eurocentrismo son:</li>
+                          <li>La superación del dominio militar, el colonialismo político y económico.</li>
+                          <li>La lucha contra un concepto de modernidad universal. </li>
+                          <li>La superación del paradigma de desarrollo económico occidental. </li>
+                          <li>La inclusión social y política del multiculturalismo. </li>
+                          <li>La visibilidad social de los pueblos indígenas.</li>
+                          <li>La lucha contra el colonialismo intelectual.</li>
+                        </ul>
+                    </div>
+                  </div>
+              </div> <!-- end front panel -->
+          </div> <!-- end card -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modal-posicion5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog centered-propio" role="document">
+    <div class="modal-content">
+      <div class="">
+        <div class="card-container manual-flip">
+          <div class="card">
+              <div class="front">
+                  <div class="cover" style="overflow: visible;">
+                    <div class="row">
+                      <div class="col-lg-4">
+                      </div>
+                      <div class="col-lg-4">
+                       
+                      </div>
+                      <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                        <div class="divcerrar">
+                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                            <img src="assets/img/img_ova/btn_closed_blue.png" style="width: 30px;" class="m-0 p-0">
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="user">
+                      <div class="border-white">
+                        <div class="radius-gray">
+                          <img class="img-circle" src="assets/img/img_ova/posicion-5.png"/>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="m-2">
+                    <div class="p-4">
+                      <p class="p_white justificado h4">
+                        La crítica más fuerte al eurocentrismo solo llegará hasta 1960 cuando aparecen en América Latina nuevos corrientes de pensamiento y posturas críticas a nivel filosófico y social, “entre las corrientes de esa época podemos mencionar la crítica de la “Teoría de la Dependencia” [CARDOSO Y FALETTO, (1969)], la “Sociología” de ORLANDO FALS BORDA (1971), la “Teología de la Liberación” (SCANNONE, II, 2005) y la “Filosofía de la Liberación” DUSSEL (2014)” (PACHÓN SOTO,2016, p.88).</p>
+                    </div>
+                  </div>
+              </div> <!-- end front panel -->
+          </div> <!-- end card -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modal-posicion6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog centered-propio" role="document">
+    <div class="modal-content">
+      <div class="">
+        <div class="card-container manual-flip">
+          <div class="card">
+              <div class="front">
+                  <div class="cover" style="overflow: visible;">
+                    <div class="row">
+                      <div class="col-lg-4">
+                      </div>
+                      <div class="col-lg-4">
+                       
+                      </div>
+                      <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                        <div class="divcerrar">
+                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                            <img src="assets/img/img_ova/btn_closed_blue.png" style="width: 30px;" class="m-0 p-0">
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="user">
+                      <div class="border-white">
+                        <div class="radius-gray">
+                          <img class="img-circle" src="assets/img/img_ova/posicion-6.png"/>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="m-2">
+                    <div class="p-4">
+                      <p class="p_white justificado h4">
+                        El eurocentrismo ubica a Europa desde una concepción ideológica, en la que el Viejo Continente es superior y el centro de todas las cosas, establece que Europa es una civilización madura y racional; la lucha frente a este eurocentrismo en América Latina ha tenido dos momentos centrales, el primero, en el siglo XIX, y el segundo desde 1960. </p>
+                    </div>
+                  </div>
+              </div> <!-- end front panel -->
+          </div> <!-- end card -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <script src="js/views/inicio.js"></script>

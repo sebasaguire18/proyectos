@@ -69,7 +69,13 @@ function controlSlides2(num){
         case 1:
             var pdf = `<div class="col-md-12">
                               <p class="p_white size_20">
-                                  <a href="assets/PDF/UNIDAD2/Cómo_investigan_los_economistas.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> Cómo_investigan_los_economistas.pdf</a>
+                                  <a href="assets/PDF/UNIDAD2/Epistemologias_del_sur_2018.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> Epistemologías del sur.pdf</a>
+                              </p>
+                              <p class="p_white size_20">
+                                  <a href="assets/PDF/UNIDAD2/La idea de américa Latina.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> La idea de América Latina.pdf</a>
+                              </p>
+                              <p class="p_white size_20">
+                                  <a href="assets/PDF/UNIDAD2/Modernidad, COLONIALISMO.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> Modernidad, Colonialismo y emancipación en América Latina.pdf</a>
                               </p>
                             </div>`;
             $('.pdfs').html(pdf);

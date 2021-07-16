@@ -1,21 +1,21 @@
 @font-face {
     font-family: 'Barmeno';
-    src: url('../fonts/barmeno.woff2') format('woff2'),
-        url('../fonts/barmeno.woff') format('woff');
+    src: url('../../fonts/barmeno.woff2') format('woff2'),
+        url('../../fonts/barmeno.woff') format('woff');
     font-weight: 400;
     font-style: normal;
 }
 @font-face {
     font-family:'Barmeno';
-    src: url('../fonts/barmeno_medium.woff2') format('woff2'),
-        url('../fonts/barmeno_medium.woff') format('woff');
+    src: url('../../fonts/barmeno_medium.woff2') format('woff2'),
+        url('../../fonts/barmeno_medium.woff') format('woff');
     font-weight: 600;
     font-style: normal;
 }
 @font-face {
     font-family: 'Barmeno';
-    src: url('../fonts/barmeno_bold.woff2') format('woff2'),
-        url('../fonts/barmeno_bold.woff') format('woff');
+    src: url('../../fonts/barmeno_bold.woff2') format('woff2'),
+        url('../../fonts/barmeno_bold.woff') format('woff');
     font-weight: 800;
     font-style: normal;
 }
@@ -24,25 +24,25 @@
     font-family: 'PT Sans';
     font-weight: 400;
     font-style: normal;
-    src: url('../fonts/PTS55F-webfont.woff') format('woff');
+    src: url('../../fonts/PTS55F-webfont.woff') format('woff');
 }
 @font-face {
     font-family: 'PT Sans';
     font-weight: 400;
     font-style: italic;
-    src: url('../fonts/PTS56F-webfont.woff') format('woff');
+    src: url('../../fonts/PTS56F-webfont.woff') format('woff');
 }
 @font-face {
     font-family: 'PT Sans';
     font-weight: 800;
     font-style: normal;
-    src: url('../fonts/PTS75F-webfont.woff') format('woff');
+    src: url('../../fonts/PTS75F-webfont.woff') format('woff');
 }
 @font-face {
     font-family: 'PT Sans';
     font-weight: 800;
     font-style: italic;
-    src: url('../fonts/PTS76F-webfont.woff') format('woff');
+    src: url('../../fonts/PTS76F-webfont.woff') format('woff');
 }
 a {
     color: #49a5aa;
@@ -177,7 +177,7 @@ html{
     padding-bottom: 65px;
 }
 .btn-primary{
-    background: #7a3d78;
+    background: #003442;
     border: none;
     border-radius: 0;
     font-family: 'Barmeno', sans-serif;
@@ -186,7 +186,7 @@ html{
     border-radius: 20px;
 }
 .btn-primary:active, .btn-primary:active:focus, .btn-primary:focus, .btn-primary:hover{
-    background: #994c91;;
+    background: #ffd200;
     border: none;
     outline: 0;
 }
@@ -217,10 +217,10 @@ html{
     width: 300px;
 }
 .calificacion .modal-body.exito{
-    background: url('../../img/img1/bien.png') center no-repeat;
+    background: url('../../img/img4/bien.png') center no-repeat;
 }
 .calificacion .modal-body.parcial{
-    background: url('../../img/img1/mal.png') center no-repeat;
+    background: url('../../img/img4/mal.png') center no-repeat;
 }
 .calificacion .modal-body .mensaje{
     background: #fff;

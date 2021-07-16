@@ -1,7 +1,5 @@
 $( document ).ready(function() {
-    slide_predeterminado();
-    console.log(tema);
-    slide_link(tema);
+    
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',
@@ -30,6 +28,8 @@ $( document ).ready(function() {
         actualizarprogress();
     });
     /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
+    
+    slide_predeterminado();
 
     var knob = "";
     var bar = "";
@@ -46,7 +46,8 @@ $( document ).ready(function() {
 
     $(".citar").on('click', citar);
     funcion_vanvas();
-    
+
+    slide_link(tema);
 });
 
 $(function () {
@@ -61,13 +62,13 @@ function slide_predeterminado(){
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
     controlSlides(1);
-    // window.location.href ="#unidad1-1";
+    $('#smartwizard').smartWizard("goToStep", 0);
 }
 
 function slide_link(num){
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
-    // window.location.href ="#unidad1-"+num;
+    $('#smartwizard').smartWizard("goToStep", num-1);
     controlSlides(num);
 }
 
@@ -896,5 +897,99 @@ function pant13(num){
             break;
         default:
             break;
+    }
+}
+
+
+function acordeon(num,estado) {
+
+    $('.contenidoAcordeon1, .contenidoAcordeon2, .contenidoAcordeon3').removeClass('d-block');
+    $('.contenidoAcordeon1, .contenidoAcordeon2, .contenidoAcordeon3').addClass('d-none');
+
+
+    if (estado=='acordeon') {
+        if (num==1) {
+            $('.acordeon2').addClass('d-none');
+            $('.acordeon3').addClass('d-none');
+            $('.acordeon2').removeClass('d-flex');
+            $('.acordeon3').removeClass('d-flex');
+            
+            $('.acordeon1').addClass('ocultarAcordeon1');
+            $('.acordeon1').removeClass('acordeon1');
+            
+            $('.contenidoAcordeon1').removeClass('d-none');
+            $('.contenidoAcordeon1').addClass('d-block');
+            
+            $('.ocultarAcordeon1').attr('onclick',"acordeon(1,'ocultar')");
+        }else if (num==2) {
+            $('.acordeon1').addClass('d-none');
+            $('.acordeon3').addClass('d-none');
+            $('.acordeon1').removeClass('d-flex');
+            $('.acordeon3').removeClass('d-flex');
+            
+            $('.acordeon2').addClass('ocultarAcordeon2');
+            $('.acordeon2').removeClass('acordeon2');
+            
+            $('.contenidoAcordeon2').removeClass('d-none');
+            $('.contenidoAcordeon2').addClass('d-block');
+            
+            $('.ocultarAcordeon2').attr('onclick',"acordeon(2,'ocultar')");
+        }else if (num==3) {
+            $('.acordeon2').addClass('d-none');
+            $('.acordeon1').addClass('d-none');
+            $('.acordeon2').removeClass('d-flex');
+            $('.acordeon1').removeClass('d-flex');
+            
+            $('.acordeon3').addClass('ocultarAcordeon3');
+            $('.acordeon3').removeClass('acordeon3');
+            
+            $('.contenidoAcordeon3').removeClass('d-none');
+            $('.contenidoAcordeon3').addClass('d-block');
+            
+            $('.ocultarAcordeon3').attr('onclick',"acordeon(3,'ocultar')");
+        }
+
+    }else if(estado=='ocultar'){
+
+        if (num==1) {
+            $('.acordeon2').addClass('d-flex');
+            $('.acordeon3').addClass('d-flex');
+            $('.acordeon2').removeClass('d-none');
+            $('.acordeon3').removeClass('d-none');
+            
+            $('.ocultarAcordeon1').addClass('acordeon1');
+            $('.ocultarAcordeon1').removeClass('ocultarAcordeon1');
+            
+            $('.contenidoAcordeon1').removeClass('d-block');
+            $('.contenidoAcordeon1').addClass('d-none');
+            
+            $('.acordeon1').attr('onclick',"acordeon(1,'acordeon')");
+        }else if (num==2) {
+            $('.acordeon1').addClass('d-flex');
+            $('.acordeon3').addClass('d-flex');
+            $('.acordeon1').removeClass('d-none');
+            $('.acordeon3').removeClass('d-none');
+            
+            $('.ocultarAcordeon2').addClass('acordeon2');
+            $('.ocultarAcordeon2').removeClass('ocultarAcordeon2');
+            
+            $('.contenidoAcordeon2').removeClass('d-block');
+            $('.contenidoAcordeon2').addClass('d-none');
+            
+            $('.acordeon2').attr('onclick',"acordeon(2,'acordeon')");
+        }else if (num==3) {
+            $('.acordeon2').addClass('d-flex');
+            $('.acordeon1').addClass('d-flex');
+            $('.acordeon2').removeClass('d-none');
+            $('.acordeon1').removeClass('d-none');
+            
+            $('.ocultarAcordeon3').addClass('acordeon3');
+            $('.ocultarAcordeon3').removeClass('ocultarAcordeon3');
+            
+            $('.contenidoAcordeon3').removeClass('d-block');
+            $('.contenidoAcordeon3').addClass('d-none');
+            
+            $('.acordeon3').attr('onclick',"acordeon(3,'acordeon')");
+        }
     }
 }

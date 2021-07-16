@@ -108,11 +108,7 @@ function actualizarprogress(){
     if(unidad == 1){
         naveg = 0;
     }else if(unidad == 2){
-        naveg = 6;
-    }else if(unidad == 3){
-        naveg = 9;
-    }else if(unidad == 4){
-        naveg = 15;
+        naveg = 17;
     }
     done = $(".done").length;
     /*if(unidad == 2){
@@ -121,7 +117,7 @@ function actualizarprogress(){
     /*alert(naveg);
     alert(done);
     alert(active);*/
-    total_porcentaje = parseInt(((done+active+naveg)*100)/20);
+    total_porcentaje = parseInt(((done+active+naveg)*100)/28);
     $(".number").html(total_porcentaje+'%');
     var pixel = parseInt(((total_porcentaje*157)/100)+200);
     /*alert(pixel);
@@ -134,7 +130,7 @@ function actualizarprogress(){
             'stroke-dasharray', total,
             'stroke-dashoffset','415'
     );*/
-    $(".up").css({ "stroke": "#7a3d78", 
+    $(".up").css({ "stroke": "#00441B", 
                     "stroke-width": "10px",
                     "stroke-dasharray": pixel,
                     "stroke-dashoffset":"200"
