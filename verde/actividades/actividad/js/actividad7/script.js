@@ -8,12 +8,10 @@ function inicioRecurso() {
             {id: "B", answer_txt: "Falso"}
         ];
     var _questions = [
-        {question_txt: "{𝑎, 𝑑}⊂{𝑎,𝑏,𝑐,{ 𝑑}}", answer_id: "B", img:""},
-        {question_txt: "{𝑎, 𝑎, 𝑎}⊂{𝑎}", answer_id: "A", img:""},
-        {question_txt: "{┤}=0", answer_id: "B", img:""},
-        {question_txt: "𝜙={┤}:", answer_id: "A", img:""},
-        {question_txt: "Si 𝐴 ⊂ 𝐵 entonces  𝐴 ∩𝐵 ⊂ 𝐵:", answer_id: "B", img:""},
-        {question_txt: "Si  𝑥∈𝐴 ∪𝐵  entonces  𝑥 ∈ 𝐴△𝐵", answer_id: "B", img:""}
+        {question_txt: "Para Gabriel García Márquez, el gran problema de América Latina fue que no logró asumirse con creatividad.", answer_id: "A", img:""},
+        {question_txt: "La descolonización es un proceso de liberación centrado únicamente en el territorio. ", answer_id: "B", img:""},
+        {question_txt: "La deconstrucción del heliocentrismo es determinante para la deconstrucción del eurocentrismo en América Latina.", answer_id: "A", img:""},
+        {question_txt: "Las relaciones de la colonialidad desaparecieron por completo en América Latina.", answer_id: "B", img:""}
 
     ];
 
@@ -30,4 +28,4 @@ function inicioRecurso() {
 
     //termina Actividad 2
 
-}
+}       

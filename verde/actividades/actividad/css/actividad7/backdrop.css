@@ -45,11 +45,11 @@
     src: url('../../fonts/PTS76F-webfont.woff') format('woff');
 }
 a {
-    color: #49a5aa;
+    color: #008F3E;
     outline: none;
 }
 a:hover {
-    color: #49a5aa;
+    color: #008F3E;
 }
 body {
     font-family: 'PT Sans', sans-serif;
@@ -176,7 +176,7 @@ html{
     padding-bottom: 65px;
 }
 .btn-primary{
-    background: #0075a8;
+    background: #008F3E;
     border: none;
     border-radius: 0;
     font-family: 'Barmeno', sans-serif;
@@ -184,7 +184,7 @@ html{
     padding: 6px 30px;
 }
 .btn-primary:active, .btn-primary:active:focus, .btn-primary:focus, .btn-primary:hover{
-    background: #ffd200;
+    background: #00441B;
     border: none;
     outline: 0;
 }
