@@ -82,7 +82,7 @@ td.start.selected:hover {
 }
 
 .border-bottom-actividad{
-    border-bottom: solid 3px #005B8B;
+    border-bottom: solid 3px #008F3E;
 }
 
 .img-activi{
@@ -91,11 +91,11 @@ td.start.selected:hover {
 
 .text-img-actividad{
     font-size: 20px;
-    color: #005B8B;
+    color: #008F3E;
 }
 
 .content-text-img-activi{
-  border-bottom: solid 3px #005B8B;
+  border-bottom: solid 3px #008F3E;
   height: 86px;
   margin: 0px;
   padding-top: 45px;
@@ -103,7 +103,7 @@ td.start.selected:hover {
 }
 
 .content-text-img-activi-2{
-  border-bottom: solid 3px #005B8B;
+  border-bottom: solid 3px #008F3E;
   width: 50%;
   height: 86px;
   margin: 0px;
@@ -112,7 +112,7 @@ td.start.selected:hover {
 }
 
 .content-tarjeta{
-  background: #FFC000;
+  background: #79CAF3;
   border-radius: 20px;
   padding: 15px;
 }
@@ -146,7 +146,7 @@ td.start.selected:hover {
 }
 
 .info_actividad{
-    background: rgba(255, 192, 0);
+    background: #b4c6e7;
     border-radius: 20px;
     padding: 20px;
 }
@@ -173,6 +173,10 @@ td.start.selected:hover {
 }
 
 .btn-mostaza{
-    background: #A38D38;
+    background: #00441B;
     color: #fff;
+}
+.btn-mostaza:hover{
+    background: #008F3E!important;
+    color: #fff!important;
 }

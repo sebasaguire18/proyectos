@@ -45,11 +45,11 @@
     src: url('../../fonts/PTS76F-webfont.woff') format('woff');
 }
 a {
-    color: #49a5aa;
+    color: #008F3E;
     outline: none;
 }
 a:hover {
-    color: #49a5aa;
+    color: #008F3E;
 }
 body {
     font-family: 'PT Sans', sans-serif;
@@ -58,7 +58,7 @@ body {
     height: 100%;
 }
 button.close{
-    background: #fff;
+    background: #ad123c;
     border-radius: 50%;
     color: #fff;
     height: 30px;
@@ -74,7 +74,7 @@ button.close{
     z-index: 1000;
 }
 button.close:focus, button.close:hover{
-    background: #79CAF3;
+    background: #ffd200;
     opacity: 1;
 }
 button.cerrar-leccion{
@@ -88,10 +88,10 @@ h1, h2, h3, h4, h5{
     font-weight: 600;
 }
 h1{
-    color: #fff;
+    color: #ad123c;
 }
 h3{
-    color: #79CAF3;
+    color: #FFD200;
 }
 html{ 
     height: 100%; 
@@ -114,7 +114,7 @@ html{
     }
 }
 .backdrop.actividad{
-    background: #ffffff;
+    background: #0075A8;
 }
 .backdrop.recurso{
     background: #49a5aa;
@@ -125,10 +125,10 @@ html{
 }
 .backdrop header{
     font-size: 1.3em;
-    padding: 20px 40px;
+    padding: 10px 20px;
 }
 .backdrop.actividad header{
-    background: rgba(255,210,0,.4);
+    /* background: rgb(51 122 183 / 50%); */
 }
 .backdrop.recurso header{
     background: rgba(73,165,170,.4);
@@ -143,7 +143,7 @@ html{
     font-weight: 600;
 }
 .backdrop.actividad header h1{
-    text-shadow: 4px 3px 0 #79CAF3;
+    text-shadow: 4px 3px 0 #ffd200;
 }
 .backdrop.recurso header h1{
     text-shadow: 4px 3px 0 #49a5aa;
@@ -156,7 +156,7 @@ html{
     padding: 2px 25px;
 }
 .backdrop.actividad header h2{
-    color: #79CAF3;
+    color: #337ab7;
 }
 .backdrop.recurso header h2{
     color: #49a5aa;
@@ -169,7 +169,6 @@ html{
     overflow: auto;
 }
 .backdrop .fondo {
-    background-image: url(../img/logo-footer.png), url(../img/patron-fondo.png);
     background-color: #fff;
     position: relative;
     background-repeat: no-repeat, repeat;
@@ -177,21 +176,20 @@ html{
     padding-bottom: 65px;
 }
 .btn-primary{
-    background: #003442;
+    background: #008F3E;
     border: none;
     border-radius: 0;
     font-family: 'Barmeno', sans-serif;
     font-size: 1.15em;
     padding: 6px 30px;
-    border-radius: 20px;
 }
 .btn-primary:active, .btn-primary:active:focus, .btn-primary:focus, .btn-primary:hover{
-    background: #79CAF3;
+    background: #00441B;
     border: none;
     outline: 0;
 }
 .btn-secundary{
-    background: #79CAF3;
+    background: #337ab7;
     border: none;
     border-radius: 0;
     color: #fff;
@@ -217,10 +215,10 @@ html{
     width: 300px;
 }
 .calificacion .modal-body.exito{
-    background: url('../../img/img4/bien.png') center no-repeat;
+    background: url('../../img/img7/bien.png') center no-repeat;
 }
 .calificacion .modal-body.parcial{
-    background: url('../../img/img4/mal.png') center no-repeat;
+    background: url('../../img/img7/mal.png') center no-repeat;
 }
 .calificacion .modal-body .mensaje{
     background: #fff;
@@ -251,7 +249,7 @@ html{
     color: #8eb936;
 }
 .calificacion .modal-body.parcial .mensaje .puntaje{
-    color: #000;
+    color: #ad123c;
 }
 @keyframes wobble {
     0% {
@@ -304,4 +302,12 @@ html{
 .calificacion .modal-footer {
     border: none;
     text-align: center;
+}
+
+.texto-actividad{
+    background: #ffdd37;
+    padding: 10px;
+    border-radius: 20px;
+    -webkit-box-shadow: -6px 5px 21px 2px rgb(0 0 0 / 50%);
+    box-shadow: -6px 5px 21px 2px rgb(0 0 0 / 50%);
 }

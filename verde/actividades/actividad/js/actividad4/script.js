@@ -2,34 +2,40 @@
 // la palabra en cuestión y la pista que se presenta al usuario
 const palabras = [
   {
-    pos: [0, 0],
+    pos: [1, 5],
+    sentido: 0,
+    palabra: 'ethnos',
+    pista: 'Grupo étnico'
+  },
+  {
+    pos: [2, 4],
     sentido: 1,
-    palabra: 'metaetica',
-    pista: 'Investiga preguntas amplias como, “¿Qué es la moralidad?” “¿qué es la justicia?” “¿existe la verdad?”'
+    palabra: 'etnia',
+    pista: 'Conjunto de personas que pertenecen a una misma raza y, generalmente, a una misma comunidad lingüística y cultural.'
   },
   {
-    pos: [6, 0],
-    sentido: 0,
-    palabra: 'moral',
-    pista: 'Conjunto de normas, creencias, principios que determinan para una persona o un colectivo lo bueno o lo malo.'
-  },
-  {
-    pos: [8, 0],
+    pos: [4, 4],
     sentido: 1,
-    palabra: 'reflexion',
-    pista: 'Renuevan el aire que respiramos'
+    palabra: 'indianidad',
+    pista: 'Renuevan el aire que respiramosManifestaciones del despertar indígena sean grupos mayoritarios o minoritarios. '
   },
   {
-    pos: [0, 3],
-    sentido: 0,
-    palabra: 'aristoteles',
-    pista: 'Consideraba que el objetivo del hombre era lograr su felicidad, y que a través dela ética aprendería la forma de alcanzarla.'
+    pos: [6, 2],
+    sentido: 1,
+    palabra: 'clase',
+    pista: 'grupo de personas que dentro de la sociedad tiene condiciones comunes de vida o de trabajo, e intereses y medios económicos iguales o parecidos.'
   },
   {
-    pos: [6, 6],
+    pos: [4, 9],
     sentido: 0,
-    palabra: 'etica',
-    pista: 'Análisis o estudio de lo moral'
+    palabra: 'nacion',
+    pista: 'omunidad social con una organización política común y un territorio y órganos de gobierno propios, que es soberana e independiente políticamente de otras comunidades.'
+  },
+  {
+    pos: [3, 13],
+    sentido: 0,
+    palabra: 'identidad',
+    pista: 'Características que distinguen unas cosas de otras, que las particularizan.'
   }
 ]
 
