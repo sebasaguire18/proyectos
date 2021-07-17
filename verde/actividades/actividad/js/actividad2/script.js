@@ -51,7 +51,7 @@ function calificarEmparejamiento(event) {
 
 function getColor() {
     //'#ad123c', '#ffd200', #49a5aa
-    var colors = ['#rgb(255, 192, 0);'];
+    var colors = ['#b4c6e7;'];
     var index = Math.floor(Math.random() * (colors.length - 0)) + 0;
     return colors[index];
 }
