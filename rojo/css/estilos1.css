@@ -28,6 +28,38 @@
 .azul_uno{
 	background: #B7CBD9;
 }
+
+.bg-color-claro{
+	background: #f7bfc2;
+}
+.bg-color{
+	background: var(--bg-color);
+}
+.bg-color-dark{
+	background: var(--bg-color-dark);
+}
+.bg-second{
+	background: var(--bg-color-second);
+}
+.bg-second-dark{
+	background: var(--bg-color-second-dark);
+}
+.bg-color-1{
+	background: #c769fa;
+}
+.bg-color-2{
+	background: #896bf3;
+}
+.bg-color-3{
+	background: #677df5;
+}
+.bg-color-4{
+	background: #65b0f1;
+}
+.bg-cf{
+	background: #999999!important;
+}
+
 .menos-margin-100{
 	margin-top: -100px;
 }
@@ -78,12 +110,55 @@
 .boder-bottom-big{
 	border-bottom: solid 5px var(--bg-color)!important;
 }
+.boder-bottom{
+	border-bottom: solid 1px var(--bg-color-second)!important;
+}
+.boder-right{
+	border-right: solid 1px var(--bg-color-second)!important;
+}
+.boder-left{
+	border-left: solid 1px var(--bg-color-second)!important;
+}
 .border-default{
 	border-radius: 20px!important;
 }
-.border_r{
+.border-45{
 	border-radius: 45px!important;
 }
+.border-25{
+	border-radius: 25px!important;
+}
+.border-10{
+	border-radius: 10px!important;
+}
+
+.verticaltext{
+	width:1px;
+	word-wrap: break-word;
+	white-space:pre-wrap; 
+}
+.tabla-frec{
+	border-left: 3px solid var(--bg-color);
+	border-bottom: 3px solid var(--bg-color);
+	padding: 10px 0 0 0;
+}
+.barras{
+	background: var(--bg-color-second);
+	border-radius: 0px 5px 5px 0px;
+	padding-left: 6px;
+	padding-right: 6px;
+	padding-bottom: 6px;
+	padding-top: 6px;
+	margin: 0px 5px 5px;
+	color: white;
+	font-size: 16px;
+}
+.barras:hover{
+	padding-left: 16px;
+	transition: .4s ;
+}
+
+
 .card_top{
 	margin: 0px;
 	padding-left: 1.5rem;
@@ -93,6 +168,8 @@
 	border-bottom-right-radius: 42px;
 	border-bottom-left-radius: 42px;
 }
+
+
 
 .card1_bottom{
 	margin: 0px;
@@ -252,27 +329,7 @@ p, button{
 	font-size: 15px;
 }
 
-.bg-color{
-	background: var(--bg-color);
-}
-.bg-color-dark{
-	background: var(--bg-color-dark);
-}
-.bg-color-1{
-	background: #c769fa;
-}
-.bg-color-2{
-	background: #896bf3;
-}
-.bg-color-3{
-	background: #677df5;
-}
-.bg-color-4{
-	background: #65b0f1;
-}
-.bg-cf{
-	background: #999999!important;
-}
+
 .hidden{
 	visibility: hidden;
 	opacity: 0;
