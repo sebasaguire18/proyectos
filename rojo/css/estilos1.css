@@ -59,7 +59,14 @@
 .bg-cf{
 	background: #999999!important;
 }
-
+#unidad1-15{
+	background-image: url(../assets/img/img_ova/fondo_actividades.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: right bottom;
+	height: 100%;
+	width: 50%;
+}
 .menos-margin-100{
 	margin-top: -100px;
 }
