@@ -91,15 +91,47 @@ iframe{
 .color-title{
   color: var(--bg-color-dark);
 }
+.text-black{
+  color: black!important;
+}
+.text-white{
+  color: white!important;
+}
+.text-gray{
+  color: rgb(140, 140, 140)!important;
+}
 
 .titulo-ova{
-  background-image: url(../assets/img/img_ova/Metodología-de-la-investigación-03.png);
+  background-image: url(../assets/img/img_template/Simulación-gerencial-03.png);
   background-repeat: no-repeat;
   background-size: contain;
-  width: 400px;
-  height: 100px;
-  padding: 38px 0px 0px 100px;
+  width: 850px;
+  height: 120px;
+  padding: 36px 0px 0px 109px;
 }
+
+.titulo_sub{
+  height: 85px;
+  border-bottom: solid 4px var(--bg-color);
+  padding-top: 40px;
+  padding-left: 25px;
+  text-align: center;
+}
+.titulo_sub p{
+  font-size: 20px;
+  color: var(--bg-color);
+}
+.banner_activi{
+  background: var(--bg-color-medio);
+  margin-left: 10px;
+  border-radius: 30px;
+  padding: 20px 1px 20px 20px;
+}
+.imgactividad{
+  width: 140%;
+  z-index: 100;
+}
+
 
 .c-body{
    background-color: #EAEAEA;
