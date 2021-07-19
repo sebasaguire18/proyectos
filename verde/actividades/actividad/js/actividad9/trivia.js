@@ -64,7 +64,7 @@ window.onload = function () {
     $('.img_option_0_0').prepend(texto1);
     var texto2 = `<div style="width: 100%; position: relative; display: flex;">
                   <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -65px; left:38%;">
-                    <img src="../img/img9/Indigena2.png" style="width: 100%;">
+                    <img src="../img/img9/colonialismo.png" style="width: 300%; margin-left:-30px">
                   </div>
                 </div>`;
 
