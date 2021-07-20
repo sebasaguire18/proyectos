@@ -33,16 +33,6 @@ function modal_scroll7(){
     container = document.querySelector('.custom-scrollbar__inner7');
     scroll();
 }
-function modal_scroll8(){
-    dragging = "";
-    diff = "";
-    newTop = "";
-    scrollOffset = "";
-    knob = document.querySelector('.custom-scrollbar__knob8');
-    bar = document.querySelector('.custom-scrollbar__bar8');
-    container = document.querySelector('.custom-scrollbar__inner8');
-    scroll();
-}
 
 function scroll(){
     // When the container is scrolled

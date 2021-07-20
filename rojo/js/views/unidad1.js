@@ -1,7 +1,7 @@
 $( document ).ready(function() {
     slide_predeterminado();
-    console.log(tema);
-    slide_link(tema);
+    // console.log(tema);
+
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',
@@ -29,7 +29,32 @@ $( document ).ready(function() {
         slide();
         actualizarprogress();
     });
-    /*setMigaja("Unidades de aprendizaje","1. La pesquisa bibliográfica","Exploración de la literatura como sustento.");*/
+
+
+    $(".btn-unidad1-1").on("click", function () {
+        $(".divcircle").hide();
+        $(".div-circle-1").show(500);
+    })
+    $(".btn-unidad1-2").on("click", function () {
+        $(".divcircle").hide();
+        $(".div-circle-2").show(500);
+    })
+    $(".btn-unidad1-3").on("click", function () {
+        $(".divcircle").hide();
+        $(".div-circle-3").show(500);
+    })
+    $(".btn-unidad1-4").on("click", function () {
+        $(".divcircle").hide();
+        $(".div-circle-4").show(500);
+    })
+    $(".btn-unidad1-5").on("click", function () {
+        $(".divcircle").hide();
+        $(".div-circle-5").show(500);
+    })
+
+
+    $
+    /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
 
     var knob = "";
     var bar = "";
@@ -41,15 +66,11 @@ $( document ).ready(function() {
     $(".modal_scroll2").on('click', modal_scroll2);
     $(".modal_scroll3").on('click', modal_scroll3);
     $(".modal_scroll4").on('click', modal_scroll4);
-    /*$(".unidad1-1").on('click', slide_link);
-    $(".unidad1-5").on('click', slide_link);
-    $(".unidad1-6_paso1").on('mouseover', unidad1_pantalla6_accion1);
-    $(".unidad1-6_paso3").on('mouseover', unidad1_pantalla6_accion3);
-    $(".unidad1-6_paso1").on('mouseleave', unidad1_pantalla6_accion4);
-    $(".unidad1-6_paso2").on('mouseleave', unidad1_pantalla6_accion4);
-    $(".unidad1-6_paso3").on('mouseleave', unidad1_pantalla6_accion4);*/
 
-    /*scroll();*/
+
+    slide_link(tema);
+
+    
 });
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
@@ -73,62 +94,101 @@ function slide_link(num){
     controlSlides(num);
 }
 
+
+
 function controlSlides(num){
     switch (parseInt(num)) {
         case 1:
-            setMigaja("Unidades de aprendizaje","1. La pesquisa bibliográfica","Exploración de la literatura como sustento.");
-            dragging = "";
-            diff = "";
-            newTop = "";
-            scrollOffset = "";
-            knob = document.querySelector('.custom-scrollbar__knob');
-            bar = document.querySelector('.custom-scrollbar__bar');
-            container = document.querySelector('.custom-scrollbar__inner');
-            scroll();
+            setMigaja("Unidades de aprendizaje","1. Construcción del marco teórico");
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","1. La pesquisa bibliográfica","Exploración de la literatura como sustento.");            
+            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");            
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","1. La pesquisa bibliográfica","Exploración de la literatura como sustento.");
+            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");
             
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","1. La pesquisa bibliográfica","Exploración de la literatura como sustento.");
+            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");
             break;
         case 5:
-            setMigaja("Unidades de aprendizaje","1. La pesquisa bibliográfica","Método de demostración por Inducción matemática");
-            dragging = "";
-            diff = "";
-            newTop = "";
-            scrollOffset = "";
-            knob = document.querySelector('.custom-scrollbar__knob2');
-            bar = document.querySelector('.custom-scrollbar__bar2');
-            container = document.querySelector('.custom-scrollbar__inner2');
-            scroll();
+            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");
             break;
         case 6:
-            setMigaja("Unidades de aprendizaje","1. La pesquisa bibliográfica","Método de demostración por Inducción matemática");
+            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
+            
             break;
         case 7:
-            setMigaja("Unidades de aprendizaje","1. La pesquisa bibliográfica","Método de demostración por Inducción matemática");
+            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
             break;
         case 8:
-            setMigaja("Unidades de aprendizaje","1. La pesquisa bibliográfica","Método de demostración por Inducción matemática");
+            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
             break;
         case 9:
-            setMigaja("Unidades de aprendizaje","1. La pesquisa bibliográfica","Método de demostración por Inducción matemática");
+            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
             break;
         case 10:
-            setMigaja("Unidades de aprendizaje","1. La pesquisa bibliográfica","Método de demostración por Inducción matemática");
+            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
             break;
         case 11:
-            setMigaja("Unidades de aprendizaje","1. La pesquisa bibliográfica","Método de demostración por Inducción matemática");
-            $("#content-ova").load("base/unidades/unidad2.html");
-            tema = 1;
+            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
             break;
+        case 12:
+            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
+            break;    
+            
+        
         default:
             break;
+    }
+}
+
+function conjuntos(num){
+    $(".info_conjuntos").removeClass('fondo_azul_claro');
+    $(".info_conjuntos"+num).addClass('fondo_azul_claro');
+    $(".info_conjuntos").removeClass('shadow');
+    $(".info_conjuntos"+num).addClass('shadow');
+    if (num == 1) {
+        var conjunto = `
+                    <div class="col-lg-12 col-md-12">
+                        <div class="row caja-texto-b">
+                          <img class="col-md-3 " src="assets/img/img_ova/escritura.png">
+                          <p class="justificado font13  col-md-8 font-weight-bold">
+                          Por lo regular, lo que primero que se hace en una hoja aparte, a partir de lo que dice nuestra pregunta y plantean los objetivos, una especie de índice de los distintos aspectos teórico-conceptuales que debemos explicitar en el trabajo. Se enuncian los temas y subtemas y al frente de cada uno se pone la posible bibliografía en la que nos basaremos para desarrollarlo. Y eso es lo que desarrollaremos en este apartado. Escribimos nuestro título, y enseguida empezaremos a escribir lo que es pertinente aquí, con todos los subtítulos que sean necesarios.
+
+                          </p>
+                        </div>
+                        
+                      </div>
+                    `;
+        $("#info_unidad2").html(conjunto)
+    }if (num == 2) {
+        var conjunto = `
+                    <div class="col-lg-12 col-md-12">
+                        <div class="row caja-texto-b">
+                          <img class="col-md-3 " src="assets/img/img_ova/verificacion_antecedentes.png">
+                          <p class="justificado font13  col-md-8 font-weight-bold">
+                          Igual que en el elemento anterior, los antecedentes investigativos, debemos ser muy cuidadosos a la hora de desarrollar este escrito. Citaremos las fuentes desde alguna normatividad elegida (APA, Chicago, Vancouver, etc.), nos cuidaremos del fraude o copia, y elegiremos muy bien la información. Se recomiendan textos cuya edición no sobrepase los 7 años, que puedan brindarnos datos muy confiables. Aquí también se debe considerar que sean autores reconocidos, cuyas publicaciones reúnan las exigencias requeridas por el mundo de los investigadores.
+
+                          </p>
+                        </div>
+                        
+                      </div>
+                    `;
+        $("#info_unidad2").html(conjunto)
+    }if (num == 3) {
+        var conjunto = `
+                    <div class="col-lg-12 col-md-12">
+                        <div class="row caja-texto-b">
+                          <img class="col-md-3 " src="assets/img/img_ova/editor.png">
+                          <p class="justificado font13  col-md-8 font-weight-bold">
+                          Es probable que muchos de los autores que utilicemos, sean también los mismos de los antecedentes, pues suele suceder que las investigaciones den como fruto la elaboración de conceptos y teorías. <br> Es una constante que los estudiantes se pregunten por el número de páginas que esto debe llevar, y al respecto solo podemos decir que sean mesurados, no se trata de traer a colación todo lo que se parezca a la investigación, pero hay que realizar una panorámica teórico-conceptual muy completa sobre el asunto.
+                          </p>
+                        </div>
+                        
+                      </div>
+                    `;
+        $("#info_unidad2").html(conjunto)
     }
 }
 
@@ -370,411 +430,88 @@ function poner(num) {
     }
 }
 function quitar(num) {
-    $(".texto_efecto"+num).css({
-        position: 'relative',
-        top: '2px',
-        display: 'none',
-        'z-index': '100'
-    });
+    // $(".texto_efecto"+num).css({
+    //     position: 'relative',
+    //     top: '2px',
+    //     display: 'none',
+    //     'z-index': '100'
+    // });
+    if (num == 1) {
+        $(".custom-scrollbar__bar2").css('display','none');
+        $(".custom-scrollbar2").css('height','180px');
+    }
+    if (num == 2) {
+        $(".custom-scrollbar__bar2").css('display','none');
+        $(".custom-scrollbar2").css('height','180px');
+    }
     if (num == 3) {
         $(".custom-scrollbar__bar2").css('display','none');
         $(".custom-scrollbar2").css('height','180px');
     }
 }
-function conjuntos(num){
-    $(".card1").removeClass('borde_claro');
-    $(".info_conjuntos").removeClass('bg-color-dark');
-    $(".info_conjuntos"+num).addClass('bg-color-dark');
-    $(".info_conjuntos").removeClass('shadow');
-    $(".info_conjuntos"+num).addClass('shadow');
-    if (num == 1) {
-        var conjunto = `
-                    <div class="col-lg-12 col-md-12 card1 borde_oscuro py-5 menos-margin-50">
-                      <center><p class="text-black py-3">Teorías</p></center>
-                    </div>
-                    `;
-        $("#info_unidad2").html(conjunto)
-    }if (num == 2) {
-        var conjunto = `
-                    <div class="col-lg-12 col-md-12 card1 borde_oscuro py-5 menos-margin-50">
-                      <center><p class="text-black py-3">Conceptualizaciones</p></center>
-                    </div>
-                    `;
-        $("#info_unidad2").html(conjunto)
-    }if (num == 3) {
-        var conjunto = `
-                    <div class="col-lg-12 col-md-12 card1 borde_oscuro py-5 menos-margin-50">
-                      <center><p class="text-black py-3">Perspectivas</p></center>
-                    </div>
-                    `;
-        $("#info_unidad2").html(conjunto)
-    }if (num == 4) {
-        var conjunto = `
-                    <div class="col-lg-12 col-md-12 card1 borde_oscuro py-5 menos-margin-50">
-                      <center><p class="text-black py-3">Investigaciones</p></center>
-                    </div>
-                    `;
-        $("#info_unidad2").html(conjunto)
-    }if (num == 5) {
-        var conjunto = `
-                    <div class="col-lg-12 col-md-12 card1 borde_oscuro py-5 menos-margin-50">
-                      <center><p class="text-black py-3">Antecedentes en general</p></center>
-                    </div>
-                    `;
-        $("#info_unidad2").html(conjunto)
-    }
-}
-function textAreaCard(num){
-    $(".text-area-card-hijo").removeClass('bg-color');
-    $(".text-area-card-hijo").removeClass('bg-color-1');
-    $(".text-area-card-hijo").removeClass('bg-color-2');
-    $(".text-area-card-hijo").removeClass('bg-color-3');
-    $(".text-area-card-hijo").removeClass('bg-color-4');
 
-    if (num == 1) {
-        $(".text-area-card-hijo").addClass('bg-color')
-        var conjunto = `
-                        <div class="row px-5" id="contenido-hijo">
-                            <div class="col-12 m-5 text-white">
-                                <p>Previene errores o falencias que otros estudios pudiesen haber presentado.</p>
-                            </div>
-                        </div>
-                    `;
-        $("#contenido-card").html(conjunto)
-    }if (num == 2) {
-        $(".text-area-card-hijo").addClass('bg-color-1')
-        var conjunto = `
-                        <div class="row px-5" id="contenido-hijo">
-                            <div class="col-12 ml-3 mt-5 text-white">
-                                <p>Instruye sobre cómo ha de desarrollarse el nuevo estudio, 
-                                pues a través de este nos podemos dar cuenta de cómo se ha tratado 
-                                un problema de investigación específico, por ejemplo: ¿qué clases de 
-                                estudios se han realizado, los tipos de participantes, la recolección de datos,
-                                los sitios de realización y los diseños utilizados, etc.</p>
-                            </div>
-                        </div>
-                    `;
-        $("#contenido-card").html(conjunto)
-    }if (num == 3) {
-        $(".text-area-card-hijo").addClass('bg-color-2')
-        var conjunto = `
-                        <div class="row px-5" id="contenido-hijo">
-                            <div class="col-12 mt-5 text-white">
-                                <p>Guía al investigador centrándolo en su problema de investigación.</p>
-                            </div>
-                        </div>
-                    `;
-        $("#contenido-card").html(conjunto)
-    }if (num == 4) {
-        $(".text-area-card-hijo").addClass('bg-color-3')
-        var conjunto = `
-                        <div class="row px-5" id="contenido-hijo">
-                            <div class="col-12 ml-3 mt-5 text-white">
-                                <p>Legitima la importancia y la necesidad de realizar dicha investigación, 
-                                ya que a través de la bibliografía consultada esta le dará razones para el 
-                                avance o cambio del tema de investigación.</p>
-                            </div>
-                        </div>
-                    `;
-        $("#contenido-card").html(conjunto)
-    }if (num == 5) {
-        $(".text-area-card-hijo").addClass('bg-color-4')
-        var conjunto = `
-                    <div class="row px-5" id="contenido-hijo">
-                        <div class="col-12 ml-3 mt-5 text-white">
-                            <p>Conlleva a la construcción de hipótesis o afirmaciones de lo que se cree 
-                            se va a probar con la realización de dicha investigación y que serán comprobadas 
-                            o no después de esta.</p>
-                        </div>
-                    </div>
-                `;
-        $("#contenido-card").html(conjunto)
-    }if (num == 6) {
-        $(".text-area-card-hijo").addClass('bg-color')
-        var conjunto = `
-                    <div class="row px-5" id="contenido-hijo">
-                        <div class="col-12 ml-3 mt-5 text-white">
-                            <p>Incentiva a la continuación de posteriores investigaciones similares, 
-                            a la vez que puede establecer nuevas teorías o metodologías para su aplicabilidad, 
-                            generando nuevos conocimientos.</p>
-                        </div>
-                    </div>
-                `;
-        $("#contenido-card").html(conjunto)
-    }if (num == 7) {
-        $(".text-area-card-hijo").addClass('bg-color-1')
-        var conjunto = `
-                    <div class="row px-5" id="contenido-hijo">
-                        <div class="col-12 mt-5 text-white">
-                            <p>Proporciona y crea marcos de referencia para la interpretación de resultados.</p>
-                        </div>
-                    </div>
-                `;
-        $("#contenido-card").html(conjunto)
-    }
-}
-function cardImg(num,texto){
-    // $("#img-1").addClass('visibility')
-    // $("#img-2").addClass('visibility')
+
+function efect(num) {
+    switch (parseInt(num)) {
+        case 1:
+            $('.creciente').addClass('crece');
+            $('.div_texto').addClass('visibilidad');
+            break;
+        case 2:
+            $('.creciente2').addClass('crece');
+            $('.div_texto2').addClass('visibilidad');
+            break;
+        case 3:
+            $('.creciente3').addClass('crece');
+            $('.div_texto3').addClass('visibilidad');
+            break;
+        case 4:
+            $('.creciente4').addClass('crece');
+            $('.div_texto4').addClass('visibilidad');
+            break;
+        case 5:
+            $('.creciente5').addClass('crece');
+            $('.div_texto5').addClass('visibilidad');
+            break;
+        case 6:
+            $('.creciente6').addClass('crece');
+            $('.div_texto6').addClass('visibilidad');
+            $('.btn_modal').html('<button data-toggle="modal" data-target="#modal3-4" class="btn" style="background: #7a3d74;color: white;font-size: 18px;">Ver aquí ejemplo de preguntas de investigación</button>');
+            break;
+        default:
+            break;
+    }           
     
-    if (texto == 1) {
-        $(".text-2").addClass('hidden')
-        var conjunto = `
-                        <img src="assets/img/img_ova/busqueda-de-conocimiento.png" class="w-50 my-3" id="img-2">
-                        `;
-        $("#card-img-big-2").html(conjunto)
-    }else {
-        $(".text-1").addClass('hidden')
-        var conjunto = `
-                        <img src="assets/img/img_ova/contrato.png" class="w-50 my-3" id="img-1">
-                    `;
-        $("#card-img-big-1").html(conjunto)
-    }
-    if (num == 1) {
-        $("#img-1").addClass('hidden')
-        var conjunto = `
-                        <div class="row justify-content my-2 text-1" onclick="cardImg(1,1)">
-                            <div class="col-12 text-white text-start">
-                                <p class="p-small"> Una revisión exhaustiva de la bibliografía sobre el estado del arte de su situación problema, 
-                                    se debe revisar toda la bibliografía de la manera más completa sin dejar autores o teorías 
-                                    referentes a su tema/problema de investigación, para que usted se ubique dentro del contexto 
-                                    del mismo y se dé cuenta de lo que se ha hecho y de lo que usted podría hacer.
-                                </p>
-                            </div>
-                        </div>
-                    `;
-        $("#card-img-big-1").html(conjunto)
-    }if (num == 2) {
-        $("#img-2").addClass('hidden')
-        var conjunto = `
-                        <div class="row justify-content my-2 text-2" onclick="cardImg(1,2)">
-                            <div class="col-12 text-white text-start">
-                                <p class="p-small">La aplicación de una orientación teórica o de referencia, para que su investigación no pierda rigor científico.
-                                </p>
-                            </div>
-                        </div>
-                    `;
-        $("#card-img-big-2").html(conjunto)
-    }
 }
-function cardMedium(num){
-    if (num == 1) {
-        $("#img-card-medium-1").addClass('hidden')
-        $(".card3-padre-1").removeClass('bg-celeste')
-        $(".card3-padre-1").addClass('bg-white')
-        var conjunto = `
-                        <p class="p-4 p-small" id="text-car-1" style="color:black!important">Yo tengo mi propia idea de cómo guiar mi vida, mientras que otros pueden tener una idea diferente de cómo se debe guiar la vida.</p>
-                        `;
-        $("#card-img-medium-1").html(conjunto)
 
-        $("#text-car-2").addClass('hidden')
-        $(".card3-padre-2").removeClass('bg-white')
-        $(".card3-padre-2").addClass('bg-celeste')
-        var imagen = `
-                    <img src="assets/img/img_ova/idea-1.png" class="w-75 p-1" id="img-card-medium-2">
-                    `;
-        $("#card-img-medium-2").html(imagen)
-    }if (num == 2) {
-        $("#img-card-medium-2").addClass('hidden')
-        $(".card3-padre-2").removeClass('bg-celeste')
-        $(".card3-padre-2").addClass('bg-white')
-        var conjunto = `
-                        <p class="p-4 p-small" id="text-car-2" style="color:black!important">Algunos creen que la vida es bien vivida si se trabaja y se consigue cada vez más dinero, mientras que otros creen que vivirla bien es viajar y trabajar más bien poco.</p>
-                        `;
-        $("#card-img-medium-2").html(conjunto)
-        
-        $(".card3-padre-1").removeClass('bg-white')
-        $(".card3-padre-1").addClass('bg-celeste')
-        $("#text-car-1").addClass('hidden')
-        var imagen = `
-                    <img src="assets/img/img_ova/idea.png" class="w-75 p-1" id="img-card-medium-1">
-                    `;
-        $("#card-img-medium-1").html(imagen)
-    }
-}
-function simbolosShadow(num){
-    if (num == 1) {
-        // $("#img-card-medium-1").addClass('hidden')
-        // $(".card3-padre-1").removeClass('bg-celeste')
-        // $(".card3-padre-1").addClass('bg-white')
-        var conjunto = `
-                        <div class="col-8 card4 text-center bg-white border-default px-5 py-3">
-                            <p>¿El para qué?</p>
-                        </div>
-                        `;
-        $("#info-card-hijo").html(conjunto)
-    }if (num == 2) {
-        // $("#img-card-medium-2").addClass('hidden')
-        // $(".card3-padre-2").removeClass('bg-celeste')
-        // $(".card3-padre-2").addClass('bg-white')
-        var conjunto = `
-                        <div class="col-8 card4 text-center bg-white border-default px-5 py-3">
-                            <p>¿El cómo?</p>
-                        </div>
-                        `;
-        $("#info-card-hijo").html(conjunto)
-    }if (num == 3) {
-        // $("#img-card-medium-2").addClass('hidden')
-        // $(".card3-padre-2").removeClass('bg-celeste')
-        // $(".card3-padre-2").addClass('bg-white')
-        var conjunto = `
-                        <div class="col-8 card4 text-center bg-white border-default px-5 py-3">
-                            <p>¿El cuándo ocurre un fenómeno?</p>
-                        </div>
-                        `;
-        $("#info-card-hijo").html(conjunto)
-    }
-}
-function cardActividad(num){
-    if (num == 1) {
-        $(".card-actividad").removeClass('col-12')
-        $(".card-actividad").addClass('col-4')
-        var conjunto = `
-                        <h6>Sugerencia de lectura:</h6>
-                        <p>Para una mayor comprensión del tema visto, amplíe la idea de exploración de la literatura con el siguiente texto: <i><b>Lectura y escritura en la investigación. </b></i></p>
-            `;
-        $("#card-actividad-text").html(conjunto)
-    }if (num == 2) {
-        $(".card-actividad-2").removeClass('col-12')
-        $(".card-actividad-2").addClass('col-4')
-        var conjunto = `
-                        <h6>Sugerencia de lectura:</h6>
-                        <p>Para una mayor comprensión del tema visto, amplíe la idea de exploración de la literatura; no es necesario que se limite a un referente bibliográfico en particular, la elección es personal.</p>
-            `;
-        $("#card-actividad-text-2").html(conjunto)
-    }
-}
-function fuentesBiblio(num,ventana){
-    if (ventana==0) {
-        $("#contenido-fuentes2").addClass('hidden')
-        var conjunto = `<div class="row" id="contenido-fuentes1">
-                            <div class="col-4" onclick="fuentesBiblio(1,1)">
-                                <div class="d-flex justify-content-center">
-                                    <div class="imgUnidad6 bg-celeste rounded-circle p-3 text-center w-50">
-                                        <img src="assets/img/img_ova/carpeta.png" class="w-50 p-2">
-                                    </div>
-                                </div>
-                                <div class="textUnidad6 bg-celeste border-default text-center p-3 menos-margin-25">
-                                    <h5>Fuentes primarias</h5>
-                                </div>
-                            </div>
-                            <div class="col-4" onclick="fuentesBiblio(2,1)">
-                                <div class="d-flex justify-content-center">
-                                    <div class="imgUnidad6 bg-celeste rounded-circle p-3 text-center w-50">
-                                        <img src="assets/img/img_ova/archivo.png" class="w-50 p-2">
-                                    </div>
-                                </div>
-                                <div class="textUnidad6 bg-celeste border-default text-center p-3 menos-margin-25">
-                                    <h5>Fuentes secundarias</h5>
-                                </div>
-                            </div>
-                            <div class="col-4" onclick="fuentesBiblio(3,1)">
-                                <div class="d-flex justify-content-center">
-                                    <div class="imgUnidad6 bg-celeste rounded-circle p-3 text-center w-50">
-                                        <img src="assets/img/img_ova/dosier.png" class="w-50 p-2">
-                                    </div>
-                                </div>
-                                <div class="textUnidad6 bg-celeste border-default text-center p-3 menos-margin-25">
-                                    <h5>Fuentes terciarias</h5>
-                                </div>
-                            </div>
-                        </div>`;
-        $("#contenido-fuentes-padre").html(conjunto)
-    }
-    if (ventana==1) {
-        if (num == 1) {
-            $("#contenido-fuentes2").addClass('hidden')
-            var conjunto = `
-                            <div class="row mt-5" id="contenido-fuentes2" style="min-height:300px;">
-                                <div class="col-12">
-                                    <div class="row d-flex justify-content-center">
-                                        <div class="col-12 bg-celeste py-3"></div>
-                                        <div class="col-4 menos-margin-60" onclick="fuentesBiblio(1,0)">
-                                            <div class="d-flex justify-content-center">
-                                                <div class="imgUnidad6 bg-celeste rounded-circle p-3 text-center w-50 menos-margin-l-100">
-                                                    <img src="assets/img/img_ova/carpeta.png" class="w-50 p-2">
-                                                </div>
-                                            </div>
-                                            <div class="textUnidad6 bg-celeste border-default text-center p-3 menos-margin-80 menos-margin-r-100 ml-5">
-                                                <h5>Fuentes primarias</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="row d-flex justify-content-center">
-                                        <div class="col-8 bg-white border-default p-5">
-                                            <p>Proporcionan datos de primera mano, son documentos que contienen resultados de estudios. 
-                                                Ejemplos: libros, artículos de revistas científicas y ponencias o trabajos presentados 
-                                                en congresos, simposios y otros eventos similares.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            `;
-            $("#contenido-fuentes-padre").html(conjunto)
-        }if (num == 2) {
-            $("#contenido-fuentes2").addClass('hidden')
-            var conjunto = `
-                            <div class="row mt-5" id="contenido-fuentes2" style="min-height:300px;">
-                                <div class="col-12">
-                                    <div class="row d-flex justify-content-center">
-                                        <div class="col-12 bg-celeste py-3"></div>
-                                        <div class="col-4 menos-margin-60" onclick="fuentesBiblio(1,0)">
-                                            <div class="d-flex justify-content-center">
-                                                <div class="imgUnidad6 bg-celeste rounded-circle p-3 text-center w-50 menos-margin-l-100">
-                                                    <img src="assets/img/img_ova/archivo.png" class="w-50 p-2">
-                                                </div>
-                                            </div>
-                                            <div class="textUnidad6 bg-celeste border-default text-center p-3 menos-margin-80 menos-margin-r-100 ml-5">
-                                                <h5>Fuentes secundarias</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="row d-flex justify-content-center">
-                                        <div class="col-8 bg-white border-default p-5">
-                                            <p>Son listas, compilaciones y resúmenes de referencias o fuentes primarias, es decir, reprocesos
-                                             de información de primera mano. Las referencias se presentan alfabéticamente según la clasificación 
-                                             que se utilice para ordenarlas: por autor, por tema, por fecha o por área de conocimiento.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            `;
-            $("#contenido-fuentes-padre").html(conjunto)
-        }if (num == 3) {
-            $("#contenido-fuentes2").addClass('hidden')
-            var conjunto = `
-                            <div class="row mt-5" id="contenido-fuentes2" style="min-height:300px;">
-                                <div class="col-12">
-                                    <div class="row d-flex justify-content-center">
-                                        <div class="col-12 bg-celeste py-3"></div>
-                                        <div class="col-4 menos-margin-60" onclick="fuentesBiblio(1,0)">
-                                            <div class="d-flex justify-content-center">
-                                                <div class="imgUnidad6 bg-celeste rounded-circle p-3 text-center w-50 menos-margin-l-100">
-                                                    <img src="assets/img/img_ova/dosier.png" class="w-50 p-2">
-                                                </div>
-                                            </div>
-                                            <div class="textUnidad6 bg-celeste border-default text-center p-3 menos-margin-80 menos-margin-r-100 ml-5">
-                                                <h5>Fuentes terciarias</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="row d-flex justify-content-center">
-                                        <div class="col-8 bg-white border-default p-5">
-                                            <p>Son documentos donde se registran referencias a otros documentos de características diversas. 
-                                            Son útiles para detectar fuentes no documentales como organizaciones que realizan o financian estudios, 
-                                            asociaciones científicas, entre otras. (Danhke, 1989).</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            `;
-            $("#contenido-fuentes-padre").html(conjunto)
-        }
-    }
+function removeefect(num){
+    switch (parseInt(num)) {
+        case 1:
+            $('.creciente').removeClass('crece');
+            $('.div_texto').removeClass('visibilidad');
+            break;
+        case 2:
+            $('.creciente2').removeClass('crece');
+            $('.div_texto2').removeClass('visibilidad');
+            break;
+        case 3:
+            $('.creciente3').removeClass('crece');
+            $('.div_texto3').removeClass('visibilidad');
+            break;
+        case 4:
+            $('.creciente4').removeClass('crece');
+            $('.div_texto4').removeClass('visibilidad');
+            break;
+        case 5:
+            $('.creciente5').removeClass('crece');
+            $('.div_texto5').removeClass('visibilidad');
+            break;
+        case 6:
+            $('.creciente6').removeClass('crece');
+            $('.div_texto6').removeClass('visibilidad');
+            break;
+        default:
+            break;
+    } 
+    
 }

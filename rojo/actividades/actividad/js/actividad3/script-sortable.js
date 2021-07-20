@@ -58,24 +58,19 @@ var contenedorDR1 = ".contenedorD";
 var arrOrigenR1 = [
     {
         code : '<div class="componente opcion_circulo" data-order-origen="contenedorA" >\n'+
-        '<div class="opcion_circulo_content"><div class="opcion_circulo_text">Se verifica que la proposición es cierta para el primer caso</div></div>\n'+
+        '<div class="opcion_circulo_content"><div class="opcion_circulo_text"><img style="max-width: 110%"  src="../../../assets/img/img_ova/votacion.png" ></div></div>\n'+
         '</div>\n'
     },
     {
         code : '<div class="componente opcion_circulo" data-order-origen="contenedorB" >\n'+
-        '<div class="opcion_circulo_content"><div class="opcion_circulo_text">Se <b>supone cierta</b> la proposición para un caso 𝑛=𝒌. (cualquier natural)</div></div>\n'+
+        '<div class="opcion_circulo_content"><div class="opcion_circulo_text"><img style="max-width: 110%"  src="../../../assets/img/img_ova/multitud.png" ></div></div>\n'+
         '</div>\n'
     },
     {
         code : '<div class="componente opcion_circulo" data-order-origen="contenedorC" >\n'+
-        '<div class="opcion_circulo_content"><div class="opcion_circulo_text">Se <b>demuestra que es cierta</b>, Se apoya en la premisa de <b>hipótesis de inducción</b>.</div></div>\n'+
+        '<div class="opcion_circulo_content"><div class="opcion_circulo_text"><img style="max-width: 110%"  src="../../../assets/img/img_ova/observacion.png" ></div></div>\n'+
         '</div>\n'
     },
-    {
-        code : '<div class="componente opcion_circulo" data-order-origen="contenedorD" >\n'+
-        '<div class="opcion_circulo_content"><div class="opcion_circulo_text">se recurre al CONTRAEJEMPLO para afirmar que es falsa</div></div>\n'+
-        '</div>\n'
-    }
 ];
 var widthR1 = $(window).width();
 var incrementoR1 = 100/arrOrigenR1.length;

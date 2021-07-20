@@ -63,6 +63,8 @@
     cursor: url(../../img/img3/cursor-grab.cur), url(../../img/img3/cursor-grab.png), pointer;
     transition: transform .3s;
     box-sizing: content-box;
+
+    background-color: #8e1d66;
 }
 
 .componentesDestino .componente {
@@ -83,7 +85,7 @@
     max-width: 170px;
     height: auto;
     border-radius: 50%;
-    border: 2px dashed #8bd146;
+    /*border: 2px dashed #FFFFFF;*/
 }
 
 @media (max-width: 767px) {
@@ -108,23 +110,23 @@ h2.tituloContenedor {
 }
 
 h2.tituloContenedorA {
-    background: #00343A;
+    background: #8e1d66; 
 }
 
 h2.tituloContenedorB {
-    background: #00343A;
+    background: #8e1d66;
 }
 
 h2.tituloContenedorC {
-    background: #00343A;
+    background: #8e1d66;
 }
 
 h2.tituloContenedorD {
-    background: #00343A;
+    background: #8e1d66;
 }
 
 h2.tituloContenedorE {
-    background: #00343A;
+    background: #8e1d66;
 }
 
 
@@ -326,9 +328,11 @@ h2.tituloContenedorE {
 }
 
 .info_actividad{
-    background: rgba(255, 192, 0);
+    background: #8e1d66;
     border-radius: 20px;
     padding: 20px;
+    color: #FFFFFF;
+    font-size: 18px;
 }
 .pt-3{
     padding-top: 1.5em;
