@@ -125,7 +125,7 @@ html{
 }
 .backdrop header{
     font-size: 1.3em;
-    padding: 0px 40px;
+    padding: 20px 40px;
 }
 .backdrop.actividad header{
     background: rgba(255,210,0,.4);
@@ -177,7 +177,7 @@ html{
     padding-bottom: 65px;
 }
 .btn-primary{
-    background: #e3464f;
+    background: #0075a8;
     border: none;
     border-radius: 0;
     font-family: 'Barmeno', sans-serif;

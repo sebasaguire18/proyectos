@@ -1,11 +1,3 @@
-.fondo_gris_morado{
-	background: #f389be;
-}
-.fondo_azul_claro{
-	background: #8e1d66;
-	
-}
-
 .azul_mas_claro{
 	background-color:  rgba(51, 189, 255, 1);
 }
@@ -37,11 +29,163 @@
 	background: #B7CBD9;
 }
 
+.bg-color-claro{
+	background: #f7bfc2;
+}
+.bg-color{
+	background: var(--bg-color);
+}
+.bg-color-dark{
+	background: var(--bg-color-dark);
+}
+.bg-second{
+	background: var(--bg-color-second);
+}
+.bg-second-dark{
+	background: var(--bg-color-second-dark);
+}
+.bg-gray{
+	background:#e7e6e6;
+}
+.bg-color-1{
+	background: #c769fa;
+}
+.bg-color-2{
+	background: #896bf3;
+}
+.bg-color-3{
+	background: #677df5;
+}
+.bg-color-4{
+	background: #65b0f1;
+}
+.bg-cf{
+	background: #999999!important;
+}
+#unidad1-15{
+	background-image: url(../assets/img/img_ova/fondo_actividades.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: right bottom;
+	height: 100%;
+	width: 50%;
+}
+.menos-margin-100{
+	margin-top: -100px;
+}
+.menos-margin-80{
+	margin-top: -80px;
+}
+.menos-margin-60{
+	margin-top: -60px;
+}
+.menos-margin-50{
+	margin-top: -50px;
+}
+.menos-margin-25{
+	margin-top: -25px;
+}
+.menos-margin-r-100{
+	margin-right: -100px;
+}
+.menos-margin-l-100{
+	margin-left: -100px;
+}
+.p-small{
+	font-size: 19px!important;
+}
+.p-medium{
+	font-size: 26px!important;
+}
+.p-big{
+	font-size: 32px!important;
+}
+.bottom-0{
+	position: absolute;
+	bottom: 0;
+	left: 15px;
+}
 .card1{
 	padding: 0px;
 	border-radius: 45px;
-	border: solid rgba(0, 117, 168, 1);
-	min-height: 600px;
+	background: white;
+	min-height: 150px;
+}
+.borde_claro{
+	border: solid var(--bg-color)!important;
+}
+.borde_oscuro{
+	border: solid var(--bg-color-dark)!important;
+}
+.boder-bottom-big{
+	border-bottom: solid 5px var(--bg-color)!important;
+}
+.boder-bottom{
+	border-bottom: solid 1px var(--bg-color-second)!important;
+}
+.boder-right{
+	border-right: solid 1px var(--bg-color-second)!important;
+}
+.boder-left{
+	border-left: solid 1px var(--bg-color-second)!important;
+}
+.boder-second{
+	border: solid 1px var(--bg-color-second)!important;
+}
+.border-default{
+	border-radius: 20px!important;
+}
+.border-45{
+	border-radius: 45px!important;
+}
+.border-25{
+	border-radius: 25px!important;
+}
+.border-10{
+	border-radius: 10px!important;
+}
+
+.verticaltext{
+	width:1px;
+	word-wrap: break-word;
+	white-space:pre-wrap; 
+}
+.tabla-frec{
+	border-left: 3px solid var(--bg-color);
+	border-bottom: 3px solid var(--bg-color);
+	padding: 10px 0 0 0;
+}
+.barras{
+	background: var(--bg-color-second);
+	border-radius: 0px 5px 5px 0px;
+	padding-left: 6px;
+	padding-right: 6px;
+	padding-bottom: 6px;
+	padding-top: 6px;
+	margin: 0px 5px 5px;
+	color: white;
+	font-size: 16px;
+}
+.barras:hover{
+	padding-left: 16px;
+	transition: .4s ;
+}
+
+.badge1, .badge2, .badge3, .badge4{
+	font-weight: 650;
+	color: var(--bg-color-second);
+}
+.badge1:hover{
+	color: var(--bg-color);
+}
+.badge2:hover{
+	color: var(--bg-color);
+}
+.badge3:hover{
+	color: var(--bg-color);
+}
+.badge4:hover{
+	color: var(--bg-color);
 }
 
 .card_top{
@@ -53,6 +197,8 @@
 	border-bottom-right-radius: 42px;
 	border-bottom-left-radius: 42px;
 }
+
+
 
 .card1_bottom{
 	margin: 0px;
@@ -66,13 +212,10 @@
 }
 
 .card2{
-	padding: 0px;
-	border-radius: 45px;
-	border: solid rgba(51, 153, 255, 1);
-	min-height: 600px;
+	border-right: solid 1px var(--bg-color);
 }
 
-.card2_bottom{
+/* .card2_bottom{
 	margin: 0px;
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
@@ -81,15 +224,15 @@
 	border-bottom-right-radius: 42px;
 	border-bottom-left-radius: 42px;
 	background-color: rgba(51, 153, 255, 1);
-}
+} */
 .card3{
-	padding: 0px;
 	border-radius: 45px;
-	border: solid rgba(51, 189, 255, 1);
-	min-height: 600px;
+	justify-content: center;
+	text-align: center;
+	color: white;
 }
 
-.card3_bottom{
+/* .card3_bottom{
 	margin: 0px;
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
@@ -97,8 +240,8 @@
 	min-height: 300px;
 	border-bottom-right-radius: 42px;
 	border-bottom-left-radius: 42px;
-	background-color: rgba(51, 189, 255, 1);
-}
+	background-color: #65aff0;
+} */
 
 /*.card_flecha{
 	padding-left: 1.5rem;
@@ -150,6 +293,15 @@
 	width: 120%;
   position: absolute;
   left: -10%;
+}
+
+.titulo-ova-5{
+  background-image: url(../assets/img/img_ova/actividad_general.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 400px;
+  height: 100px;
+  padding: 38px 0px 0px 100px;
 }
 
 .contenido_decorado{
@@ -207,6 +359,17 @@ p, button{
 }
 
 
+.hidden{
+	visibility: hidden;
+	opacity: 0;
+}
+.visibility{
+	visibility: visible!important;
+	opacity:	1!important;
+}
+.bg-celeste{
+	background: #65aff0;
+}
 /*.header_abc{
 	background: #98bec4;
 	width: 40px;
@@ -218,12 +381,13 @@ p, button{
 }*/
 
 .header_abc{
-	background: #6fb14d;
-	padding: 5px;
-	color: #FFFFFF;
-    top: -50px;
+	background: #C4E2FF;
+    width: 1.96cm;
+    height: 1.96cm;
+    position: relative;
+    top: -30px;
     left: 100px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 
@@ -472,7 +636,7 @@ p, button{
 	padding-bottom: 0.5rem;
 	margin: 0px;
 	border-radius: 45px;
-	background-color: #a9d18e;
+	background-color: #01414b;
 	min-height: 300px;
 	visibility: hidden;
 	animation-duration: 2s;
@@ -487,7 +651,7 @@ p, button{
 	padding-bottom: 0.5rem;
 	margin: 0px;
 	border-radius: 45px;
-	background-color: #a9d18e;
+	background-color: #01414b;
 	min-height: 300px;
 	visibility: hidden;
 	animation-duration: 2s;
@@ -502,7 +666,7 @@ p, button{
 	padding-bottom: 0.5rem;
 	margin: 0px;
 	border-radius: 45px;
-	background-color: #a9d18e;
+	background-color: #01414b;
 	min-height: 300px;
 	visibility: hidden;
 	animation-duration: 2s;
@@ -517,7 +681,7 @@ p, button{
 	padding-bottom: 0.5rem;
 	margin: 0px;
 	border-radius: 45px;
-	background-color: #a9d18e;
+	background-color: #01414b;
 	min-height: 300px;
 	visibility: hidden;
 	animation-duration: 2s;
@@ -736,115 +900,4 @@ p, button{
 
 .radius_modal_90{
   border-radius: 90px;
-}
-
-.justificado{
-	text-align: justify;
-}
-
-.font14{
-	font-size: 14px;
-}
-
-.border-green{
-	border: 2px #6fb14d solid;
-	border-radius: 30px;
-	padding: 25px;
-	margin-top: 10px;
-	font-size: 14px;
-}
-
-.fontcuruba{
-	background-image: url(../assets/img/img_ova/fondo_curuba.png);
-    height: 130px;
-    width: 100%;
-    background-repeat: no-repeat;
-    padding-top: 35px;
-}
-
-.creciente, .creciente2, .creciente3, .creciente4, .creciente5, .creciente6{
-	background: #963445;
-    height: 180px;
-    border-radius: 0px 20px 20px 0px;
-    position: absolute;
-    top: 0px;
-    left: 15px;
-    z-index: 100;
-    width: 20%;
-}
-
-.div_textonum, .div_textonum2, .div_textonum3, .div_textonum4, .div_textonum5, .div_textonum6{
-	width: 10%;
-	padding: 60px 1px 1px 1px;
-	text-align: center;
-}
-.div_textonum p{
-	color: white;font-size: 30px;
-}
-.div_texto, .div_texto2, .div_texto3, .div_texto4, .div_texto5, .div_texto6{
-	width: 70%;
-	padding: 25px 1px 25px 0px;
-	visibility: hidden;
-}
-
-
-@keyframes ascend {
-  from {
-    background: #963445;
-    height: 180px;
-    border-radius: 0px 20px 20px 0px;
-    position: absolute;
-    top: 0px;
-    left: 21px;
-    z-index: 100;
-    width: 20%;
-
-    
-  }
-
-  to {
-  	background: #963445;
-    height: 180px;
-    border-radius: 0px 20px 20px 0px;
-    position: absolute;
-    top: 0px;
-    left: 21px;
-    z-index: 100;
-    width: 90%;
-
-    
-  }
-}
-
-@keyframes vis {
-  from {
-    visibility: hidden;
-  }
-
-  to {
-  	visibility: visible;
-  }
-}
-
-.target_3-4{
-	background: white;
-	height: 180px;
-	border-radius: 0px 20px 20px 0px;
-	box-shadow: 2px 1px 14px -2px;
-}
-
-.crece{
-	animation-duration: 1s;
-    animation-name:ascend;
-	animation-iteration-count: 1;
-	animation-delay: 0s;
-	animation-fill-mode: forwards;
-}
-
-.visibilidad{
-	animation-duration: 1s;
-    animation-name:vis;
-	animation-iteration-count: 1;
-	animation-delay: 1s;
-	animation-fill-mode: forwards;
 }

@@ -54,21 +54,27 @@ var btnCalificarR1 = "#calificar";
 var contenedorAR1 = ".contenedorA";
 var contenedorBR1 = ".contenedorB";
 var contenedorCR1 = ".contenedorC";
+var contenedorDR1 = ".contenedorD";
 var arrOrigenR1 = [
     {
-        code : '<div  data-order-origen="contenedorA">\n'+
-                    '<img src="../img/img3/respuesta_1.png" style="max-whidth: 50%;">\n'+
-                '</div>\n'
+        code : '<div class="componente opcion_circulo" data-order-origen="contenedorA" >\n'+
+        '<div class="opcion_circulo_content"><div class="opcion_circulo_text">Se verifica que la proposición es cierta para el primer caso</div></div>\n'+
+        '</div>\n'
     },
     {
-        code : '<div  data-order-origen="contenedorB">\n'+
-                    '<img src="../img/img3/respuesta_2.png" style="max-whidth: 50%;">\n'+
-                '</div>\n'
+        code : '<div class="componente opcion_circulo" data-order-origen="contenedorB" >\n'+
+        '<div class="opcion_circulo_content"><div class="opcion_circulo_text">Se <b>supone cierta</b> la proposición para un caso 𝑛=𝒌. (cualquier natural)</div></div>\n'+
+        '</div>\n'
     },
     {
-        code : '<div  data-order-origen="contenedorC">\n'+
-                    '<img src="../img/img3/respuesta_3.png" style="max-whidth: 50%;">\n'+
-                '</div>'
+        code : '<div class="componente opcion_circulo" data-order-origen="contenedorC" >\n'+
+        '<div class="opcion_circulo_content"><div class="opcion_circulo_text">Se <b>demuestra que es cierta</b>, Se apoya en la premisa de <b>hipótesis de inducción</b>.</div></div>\n'+
+        '</div>\n'
+    },
+    {
+        code : '<div class="componente opcion_circulo" data-order-origen="contenedorD" >\n'+
+        '<div class="opcion_circulo_content"><div class="opcion_circulo_text">se recurre al CONTRAEJEMPLO para afirmar que es falsa</div></div>\n'+
+        '</div>\n'
     }
 ];
 var widthR1 = $(window).width();
@@ -101,18 +107,20 @@ function cerrarPrecarga() {
  
 function reinitREDIR1() {
     jR1 = 0;
-    $(contenedorAR1).html('<h2 class="tituloContenedor tituloContenedorA">ETAPA 1</h2>');
-    $(contenedorBR1).html('<h2 class="tituloContenedor tituloContenedorB">ETAPA 2</h2>');
-    $(contenedorCR1).html('<h2 class="tituloContenedor tituloContenedorC">ETAPA 3</h2>');
+    $(contenedorAR1).html('<h2 class="tituloContenedor tituloContenedorA">PASO 1</h2>');
+    $(contenedorBR1).html('<h2 class="tituloContenedor tituloContenedorB">PASO 2</h2>');
+    $(contenedorCR1).html('<h2 class="tituloContenedor tituloContenedorC">PASO 3</h2>');
+    $(contenedorDR1).html('<h2 class="tituloContenedor tituloContenedorD">PASO 4</h2>');
     inicioREDIR1();
  }
 
  function reinitREDIR2() {
     jR1 = 0;
-    $(contenedorAR1).html('<h2 class="tituloContenedor tituloContenedorA">ETAPA 1</h2>');
-    $(contenedorBR1).html('<h2 class="tituloContenedor tituloContenedorB">ETAPA 2</h2>');
-    $(contenedorCR1).html('<h2 class="tituloContenedor tituloContenedorC">ETAPA 3</h2>');
-    inicioREDIR1();
+    $(contenedorAR1).html('<h2 class="tituloContenedor tituloContenedorA">PASO 1</h2>');
+    $(contenedorBR1).html('<h2 class="tituloContenedor tituloContenedorB">PASO 2</h2>');
+    $(contenedorCR1).html('<h2 class="tituloContenedor tituloContenedorC">PASO 3</h2>');
+    $(contenedorDR1).html('<h2 class="tituloContenedor tituloContenedorD">PASO 4</h2>');
+    /*inicioREDIR1();*/
  }
 
 function shuffleOrigenR1() {
@@ -140,6 +148,7 @@ function calificarR1() {
     var contenidoAR1 = $(contenedorAR1).find('div'); 
     var contenidoBR1 = $(contenedorBR1).find('div');
     var contenidoCR1 = $(contenedorCR1).find('div');
+    var contenidoDR1 = $(contenedorDR1).find('div');
 
     contenidoAR1.each(function(){
         if(($(this).attr('data-order-origen') != "contenedorA")){
@@ -168,7 +177,16 @@ function calificarR1() {
         }
     })
 
-    
+    contenidoDR1.each(function(){
+        if(($(this).attr('data-order-origen') != "contenedorD")){
+            $(origenR1).append($(this).context.outerHTML);
+            $(this).remove();
+        } else {
+            puntajeR1 = puntajeR1 + incrementoR1;
+        }
+    })
+
+
     if(parseInt(puntajeR1) == 100) {
         mensajeR1 = 'Felicitaciones!';
         exitoR1 = true;
@@ -180,7 +198,7 @@ function calificarR1() {
             mostrarCalificacion(modalIDR1, parseInt(puntajeR1)+'%', mensajeR1, exitoR1, reinitREDIR1());
          } else {
             exitoR1 = false;
-            mostrarCalificacion(modalIDR1, parseInt(puntajeR1)+'%', mensajeR1, exitoR1, reinitREDIR1());
+            mostrarCalificacion(modalIDR1, parseInt(puntajeR1)+'%', mensajeR1, exitoR1, function(){});
          }
 
      }  
@@ -221,11 +239,11 @@ var activityDragR1 = function () {
                             shuffleOrigenR1();
                         } else {
                             $(btnCalificarR1).attr('disabled', false);
-                            $(btnCalificarR1).off('click').on('click', calificarR1);
+                            $(btnCalificarR1).on('click', calificarR1);
                         }
                     } else {
                         $(btnCalificarR1).attr('disabled', false);
-                        $(btnCalificarR1).off('click').on('click', calificarR1);
+                        $(btnCalificarR1).on('click', calificarR1);
                     }
                 }
                 

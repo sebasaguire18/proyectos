@@ -8,10 +8,12 @@ function inicioRecurso() {
             {id: "B", answer_txt: "Falso"}
         ];
     var _questions = [
-        {question_txt: "Sin teorías, no se puede entender una situación problemática.", answer_id: "A", img:""},
-        {question_txt: "Nunca se debe delimitar las investigaciones en el marco teórico.", answer_id: "B", img:""},
-        {question_txt: "El marco teórico es fundamental en una investigación, ya que es la guía y la referencia bibliográfica de nuestra investigación", answer_id: "A", img:""},
-        {question_txt: "Con marco teórico no se pueden predecir estados futuros.", answer_id: "B", img:""}
+        {question_txt: "{𝑎, 𝑑}⊂{𝑎,𝑏,𝑐,{ 𝑑}}", answer_id: "B", img:""},
+        {question_txt: "{𝑎, 𝑎, 𝑎}⊂{𝑎}", answer_id: "A", img:""},
+        {question_txt: "{┤}=0", answer_id: "B", img:""},
+        {question_txt: "𝜙={┤}:", answer_id: "A", img:""},
+        {question_txt: "Si 𝐴 ⊂ 𝐵 entonces  𝐴 ∩𝐵 ⊂ 𝐵:", answer_id: "B", img:""},
+        {question_txt: "Si  𝑥∈𝐴 ∪𝐵  entonces  𝑥 ∈ 𝐴△𝐵", answer_id: "B", img:""}
 
     ];
 
